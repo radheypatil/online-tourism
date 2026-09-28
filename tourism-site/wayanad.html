@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore Wayanad, Kerala’s hill paradise known for forests, wildlife sanctuaries, waterfalls, and trekking adventures.">
+<title>Wayanad – Kerala’s Hill Paradise</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    body { font-family: 'Arial', sans-serif; background-color: #ffffff; color: #333; }
+    .navbar { background: linear-gradient(to right, #11998e, #38ef7d); }
+    .navbar-brand { font-size: 1.8rem; font-weight: bold; color: #fff; }
+    .navbar-nav .nav-link { color: #fff; font-size: 1.1rem; }
+    .navbar-nav .nav-link:hover { color: #ffeb3b; }
+
+    /* Hero Section */
+    .hero {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+    .hero video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        filter: brightness(65%);
+    }
+    .hero-overlay {
+        background-color: rgba(17, 153, 142, 0.6);
+        padding: 3rem;
+        border-radius: 10px;
+    }
+    .hero-overlay h1 { font-size: 3rem; font-weight: bold; }
+    .hero-overlay p { font-size: 1.2rem; margin-top: 1rem; }
+
+    .section-title { font-size: 2.2rem; font-weight: bold; color: #11998e; margin-bottom: 1.5rem; }
+
+    .card { border: none; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+    .card:hover { transform: scale(1.05); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-body { padding: 1.2rem; }
+    .card-title { font-size: 1.3rem; font-weight: bold; color: #333; }
+    .card-text { font-size: 1rem; color: #555; }
+
+    .footer { background-color: #11998e; padding: 2rem 0; text-align: center; color: white; }
+    .footer a { color: #ffeb3b; text-decoration: none; margin: 0 1rem; font-size: 1.1rem; }
+    .footer a:hover { text-decoration: underline; }
+
+    html { scroll-behavior: smooth; }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">DesiDwaar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
+            <li class="nav-item"><a class="nav-link" href="#travel-info">Travel Info</a></li>
+            <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <video autoplay muted loop>
+        <source src="https://videos.pexels.com/video-files/3015493/3015493-hd_1920_1080_30fps.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay">
+        <h1>Wayanad – Kerala’s Hill Paradise</h1>
+        <p>Misty hills, forests, waterfalls, and unforgettable wildlife adventures.</p>
+    </div>
+</section>
+
+<!-- Introduction -->
+<section class="container py-5">
+    <h2 class="section-title">Introduction</h2>
+    <p>Wayanad, located in the Western Ghats of Kerala, is a land of misty mountains and lush forests. Known for its wildlife sanctuaries, trekking trails, waterfalls, and spice plantations, Wayanad is a paradise for nature and adventure lovers. From spotting elephants in the wild to hiking through scenic valleys, Wayanad offers an authentic slice of Kerala’s natural beauty.</p>
+</section>
+
+<!-- Attractions -->
+<section id="attractions" class="container py-5">
+    <h2 class="section-title">Top Attractions</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://www.holidify.com/images/cmsuploads/compressed/Edakkal_Caves_20180116211619.jpg" alt="Edakkal Caves"><div class="card-body"><h5 class="card-title">Edakkal Caves</h5><p class="card-text">Ancient rock carvings dating back thousands of years, offering history and scenic views.</p></div></div></div>
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://www.wayanad.com/admin/userfiles/1490773308_soochipara%20falls.jpg" alt="Soochipara Waterfalls"><div class="card-body"><h5 class="card-title">Soochipara Waterfalls</h5><p class="card-text">A stunning three-tiered waterfall surrounded by dense forest, ideal for trekking.</p></div></div></div>
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://www.keralatourism.org/images/destination/mobile/chembra_peak_wayanad20131031111049_171_1.jpg" alt="Chembra Peak"><div class="card-body"><h5 class="card-title">Chembra Peak</h5><p class="card-text">A popular trekking spot offering breathtaking views and the heart-shaped Chembra Lake.</p></div></div></div>
+    </div>
+</section>
+
+<!-- Experiences -->
+<section id="experiences" class="container py-5">
+    <h2 class="section-title">Local Experiences</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://www.trawell.in/admin/images/upload/087089231Wayanad_Wildlife_Sanctuary_Main.jpg" alt="Wildlife Safari"><div class="card-body"><h5 class="card-title">Wildlife Safari</h5><p class="card-text">Spot elephants, deer, and exotic birds in Wayanad Wildlife Sanctuary.</p></div></div></div>
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://static2.tripoto.com/media/filter/tst/img/205546/TripDocument/1504717636_0_farm2_static_flickr_com.jpg" alt="Trekking"><div class="card-body"><h5 class="card-title">Trekking Adventures</h5><p class="card-text">Trek through tea plantations, spice gardens, and mist-covered valleys.</p></div></div></div>
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://assets-news.housing.com/news/wp-content/uploads/2022/09/05010144/Kerala-food-.jpg" alt="Kerala Cuisine"><div class="card-body"><h5 class="card-title">Kerala Cuisine</h5><p class="card-text">Taste authentic Kerala dishes including Malabar biryani and spicy curries.</p></div></div></div>
+    </div>
+</section>
+
+<!-- Travel Info -->
+<section id="travel-info" class="container py-5">
+<h2 class="section-title">Travel Information</h2>
+<p><strong>Best Time to Visit:</strong> October to May for trekking and sightseeing.</p>
+<p><strong>How to Reach:</strong> By Air - Calicut International Airport (87 km away); By Train - Kozhikode Railway Station; By Road - Well connected via NH766.</p>
+<p><strong>Local Transport:</strong> Taxis, jeeps, and rental bikes are the best ways to explore.</p>
+</section>
+
+<!-- Map -->
+<section id="map" class="container py-5">
+<h2 class="section-title">Map</h2>
+<div class="embed-responsive embed-responsive-16by9" style="height:400px;">
+<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125304.83077233572!2d76.04134633195576!3d11.685357100595538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5bfa63c54dfdb%3A0x73f03c06370e1822!2sWayanad%2C%20Kerala!5e0!3m2!1sen!2sin!4v1700000000000" allowfullscreen="" loading="lazy"></iframe>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+<p>&copy; 2025 DesiDwaar | <a href="index.html">Home</a> | <a href="#">Contact</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

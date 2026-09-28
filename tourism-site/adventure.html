@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adventure | DesiDwaar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fdfdfd;
+      color: #333;
+    }
+
+    /* Navbar */
+    nav {
+      background: rgba(10,42,67,0.9);
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 40px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    nav .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 12px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #f4a261;
+    }
+
+    /* Hero Section (Full Page with Overlay) */
+    .hero {
+      position: relative;
+      background: url('https://images.pexels.com/photos/914128/pexels-photo-914128.jpeg?cs=srgb&dl=pexels-saikat-ghosh-323099-914128.jpg&fm=jpg') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5); /* dark overlay */
+    }
+    .hero h1 {
+      font-size: 4rem;
+      z-index: 1;
+      animation: fadeDown 2s ease;
+      position: relative;
+    }
+    @keyframes fadeDown {
+      from {opacity: 0; transform: translateY(-50px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* Container */
+    .container {
+      padding: 80px 10%;
+    }
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #0a2a43;
+      position: relative;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 1s ease;
+    }
+    .section-title.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .section-title::after {
+      content: "";
+      width: 60px;
+      height: 3px;
+      background: #f4a261;
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+    }
+    p {
+      line-height: 1.7;
+      margin-bottom: 20px;
+      font-size: 1.05rem;
+    }
+
+    /* Quote Section */
+    .quote-section {
+      background: url('https://www.deccanherald.com/sites/dh/files/articleimages/2021/12/06/file72zsnn3c5y7137jipq3d-1058695-1638792449.jpg') center/cover fixed no-repeat;
+      padding: 100px 20px;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+    .quote-section::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.6);
+    }
+    .quote-section h2 {
+      position: relative;
+      font-size: 2rem;
+      font-style: italic;
+      max-width: 800px;
+      margin: 0 auto;
+      z-index: 1;
+    }
+
+    /* Card Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .card {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      cursor: pointer;
+      transform: translateY(30px);
+      opacity: 0;
+      transition: all 0.8s ease;
+    }
+    .card.active {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    .card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .card:hover img {
+      transform: scale(1.1);
+    }
+    .card h3 {
+      position: absolute;
+      bottom: 10px;
+      left: 15px;
+      color: #fff;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.7);
+      font-size: 1.3rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #0a2a43;
+      color: #ddd;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* Fix nav overlapping hero */
+    .spacer {
+      height: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">DESIDWAAR</div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="experiences.html">Experiences</a>
+      <a href="travel-info.html">Travel Info</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Thrilling Adventures of India</h1>
+  </section>
+
+  <!-- Spacer -->
+  <div class="spacer"></div>
+
+  <!-- Intro -->
+  <section class="container">
+    <h2 class="section-title">Embrace the Spirit of Adventure</h2>
+    <p>
+      India is not just about heritage and culture—it is also a land of thrill and excitement.
+      From snow-capped mountains to deep blue seas, from wild rivers to vast deserts, 
+      every adventure enthusiast finds their calling here. Whether you dream of trekking in Ladakh, 
+      rafting in Rishikesh, diving in Andaman, or dune bashing in Rajasthan, India has it all.
+    </p>
+  </section>
+
+  <!-- Quote Section -->
+  <section class="quote-section">
+    <h2>"Life is either a daring adventure or nothing at all." – Helen Keller</h2>
+  </section>
+
+  <!-- Highlights -->
+  <section class="container">
+    <h2 class="section-title">Top Adventure Destinations</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://www.deyor.in/system/images/000/300/878/160b26bc2e280d83db6ada2224d6107e/banner/DSC00399.jpg" alt="Leh Ladakh">
+        <h3>Leh-Ladakh (Biking & Trekking)</h3>
+      </div>
+      <div class="card">
+        <img src="https://www.bizarexpedition.com/images/2019/09/product/15698284392.webp" alt="Rishikesh">
+        <h3>Rishikesh (Rafting & Bungee Jumping)</h3>
+      </div>
+      <div class="card">
+        <img src="https://www.exotique.in/wp-content/uploads/2014/01/Camel-ride-in-Rajasthan-image-courtesy-www-campsinrajasthan-com.jpg" alt="Rajasthan Desert Safari">
+        <h3>Rajasthan (Desert Safari)</h3>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS41FdXhIRlns4QshZYIhHOkJeX9hK-q99Nig&s" alt="Andaman Scuba Diving">
+        <h3>Andaman (Scuba Diving & Snorkeling)</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 DesiDwaar. All rights reserved.</p>
+  </footer>
+
+  <!-- JS Scroll Animation -->
+  <script>
+    const sections = document.querySelectorAll('.section-title, .card');
+    const revealOnScroll = () => {
+      sections.forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) {
+          sec.classList.add('active');
+        }
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Manipur – The Jeweled Land of the North-East. Discover Imphal, Loktak Lake, Andro, and more.">
+  <title>Manipur – The Jeweled Land of the North-East</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body { font-family: 'Arial', sans-serif; background-color: #ffffff; color: #333; }
+    .navbar { background: linear-gradient(to right, #81d4fa, #b2dfdb); }
+    .navbar-brand { font-size: 1.8rem; font-weight: bold; color: #00695c; }
+    .navbar-nav .nav-link { color: #333; font-size: 1.1rem; }
+    .navbar-nav .nav-link:hover { color: #00695c; }
+    .btn-warning { font-weight: bold; }
+
+    /* Hero Section */
+    .hero {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+    .hero video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        filter: brightness(65%);
+    }
+    .hero-overlay {
+        background-color: rgba(0, 105, 92, 0.6); /* teal overlay */
+        padding: 3rem;
+        border-radius: 10px;
+        max-width: 700px;
+    }
+    .hero-overlay h1 { font-size: 3rem; font-weight: bold; }
+    .hero-overlay p { font-size: 1.2rem; margin-top: 1rem; }
+
+    .section-title { font-size: 2.5rem; font-weight: bold; color: #00695c; margin-bottom: 1.5rem; }
+
+    .card { border: none; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+    .card:hover { transform: scale(1.05); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-body { padding: 1.2rem; }
+    .card-title { font-size: 1.3rem; font-weight: bold; color: #333; }
+    .card-text { font-size: 1rem; color: #666; }
+
+    .footer { background-color: #b2dfdb; padding: 2rem 0; text-align: center; }
+    .footer a { color: #00695c; text-decoration: none; margin: 0 1rem; font-size: 1.1rem; }
+    .footer a:hover { text-decoration: underline; }
+
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="index.html">DesiDwaar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#culture">Culture & Food</a></li>
+          <li class="nav-item"><a class="nav-link" href="#travel-info">Travel Info</a></li>
+          <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
+          <li class="nav-item"><a class="btn btn-warning" href="#plan-trip">Plan Your Trip</a></li>
+      </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <video autoplay muted loop>
+    <source src="https://videos.pexels.com/video-files/3129959/3129959-uhd_2560_1440_25fps.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay">
+    <h1>Manipur – The Jeweled Land of the North-East</h1>
+    <p>A serene state of scenic landscapes, rich traditions, vibrant dances, and floating wonders.</p>
+  </div>
+</section>
+
+<!-- Introduction -->
+<section class="container py-5">
+  <h2 class="section-title">Introduction</h2>
+  <p>Known as the “Jeweled Land,” Manipur is one of the most picturesque states in India. With its beautiful Loktak Lake, ancient culture, rich festivals, and welcoming people, Manipur is a hidden gem of the North-East. Its capital Imphal blends history with modern charm, while villages like Andro showcase traditional lifestyle and crafts.</p>
+</section>
+
+<!-- Attractions -->
+<section id="attractions" class="container py-5">
+  <h2 class="section-title">Top Attractions</h2>
+  <div class="row">
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Imphal_City.jpg" alt="Imphal"><div class="card-body"><h5 class="card-title">Imphal</h5><p class="card-text">The capital city, rich in history, famous for Kangla Fort, Ima Keithel (women’s market), and vibrant culture.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Loktak_lake.jpg" alt="Loktak Lake"><div class="card-body"><h5 class="card-title">Loktak Lake</h5><p class="card-text">The largest freshwater lake in North-East India, known for its unique floating phumdis and Keibul Lamjao National Park.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Andro_village_Manipur.jpg" alt="Andro"><div class="card-body"><h5 class="card-title">Andro</h5><p class="card-text">A quaint village near Imphal, famous for pottery, traditional houses, and rich cultural heritage.</p></div></div></div>
+  </div>
+</section>
+
+<!-- Culture & Food -->
+<section id="culture" class="container py-5">
+  <h2 class="section-title">Culture & Food</h2>
+  <div class="row">
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Manipuri_dance.jpg" alt="Manipuri Dance"><div class="card-body"><h5 class="card-title">Manipuri Dance</h5><p class="card-text">One of the classical dances of India, Manipuri Raslila is celebrated for its graceful movements and devotion to Lord Krishna.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Manipuri_food.jpg" alt="Manipuri Cuisine"><div class="card-body"><h5 class="card-title">Manipuri Cuisine</h5><p class="card-text">Healthy and organic meals featuring dishes like Eromba (vegetable stew with fish) and Chamthong (vegetable soup).</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Sangai_Festival_in_Manipur.jpg" alt="Sangai Festival"><div class="card-body"><h5 class="card-title">Sangai Festival</h5><p class="card-text">A grand annual festival showcasing Manipuri dance, food, sports, and cultural richness.</p></div></div></div>
+  </div>
+</section>
+
+<!-- Travel Info -->
+<section id="travel-info" class="container py-5">
+  <h2 class="section-title">Travel Information</h2>
+  <p><strong>Best Time to Visit:</strong> October to March for pleasant weather and festivals.</p>
+  <p><strong>How to Reach:</strong> By Air – Imphal Airport connects to major Indian cities; By Train – Nearest railhead is Dimapur; By Road – Well-connected with Guwahati and other NE states.</p>
+  <p><strong>Local Transport:</strong> Taxis, shared cabs, and auto-rickshaws are common in cities and towns.</p>
+</section>
+
+<!-- Map -->
+<section id="map" class="container py-5">
+  <h2 class="section-title">Map</h2>
+  <div class="embed-responsive embed-responsive-16by9" style="height:400px;">
+    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7318045.789792624!2d90.8!3d24.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x374927f0d6ef9f4d%3A0x55f2e85cfbaa75ff!2sManipur!5e0!3m2!1sen!2sin!4v1702561583745!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2025 DesiDwaar | <a href="#">Contact</a> | <a href="#">Other Destinations</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

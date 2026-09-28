@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Bihar, the land of ancient history, spirituality, and culture. Explore Bodh Gaya, Nalanda, Patna, and more.">
+  <title>Bihar – Land of Enlightenment</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body { font-family: 'Arial', sans-serif; background-color: #ffffff; color: #333; }
+    .navbar { background: linear-gradient(to right, #f4e1c1, #ffe4b5); }
+    .navbar-brand { font-size: 1.8rem; font-weight: bold; color: #8b4513; }
+    .navbar-nav .nav-link { color: #333; font-size: 1.1rem; }
+    .navbar-nav .nav-link:hover { color: #8b4513; }
+    .btn-warning { font-weight: bold; }
+
+    /* Hero Section */
+    .hero {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+    .hero video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        filter: brightness(70%);
+    }
+    .hero-overlay {
+        background-color: rgba(139, 69, 19, 0.6); /* earthy brown for Bihar */
+        padding: 3rem;
+        border-radius: 10px;
+        max-width: 700px;
+    }
+    .hero-overlay h1 { font-size: 3rem; font-weight: bold; }
+    .hero-overlay p { font-size: 1.2rem; margin-top: 1rem; }
+
+    .section-title { font-size: 2.5rem; font-weight: bold; color: #8b4513; margin-bottom: 1.5rem; }
+
+    .card { border: none; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+    .card:hover { transform: scale(1.05); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-body { padding: 1.2rem; }
+    .card-title { font-size: 1.3rem; font-weight: bold; color: #333; }
+    .card-text { font-size: 1rem; color: #666; }
+
+    .footer { background-color: #f4e1c1; padding: 2rem 0; text-align: center; }
+    .footer a { color: #8b4513; text-decoration: none; margin: 0 1rem; font-size: 1.1rem; }
+    .footer a:hover { text-decoration: underline; }
+
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="index.html">DesiDwaar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#culture">Culture & Food</a></li>
+          <li class="nav-item"><a class="nav-link" href="#travel-info">Travel Info</a></li>
+          <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
+          <li class="nav-item"><a class="btn btn-warning" href="#plan-trip">Plan Your Trip</a></li>
+      </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <video autoplay muted loop>
+    <source src="https://videos.pexels.com/video-files/856690/856690-hd_1920_1080_25fps.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay">
+    <h1>Bihar – Land of Enlightenment</h1>
+    <p>Journey through the land of Buddha, ancient universities, and vibrant culture.</p>
+  </div>
+</section>
+
+<!-- Introduction -->
+<section class="container py-5">
+  <h2 class="section-title">Introduction</h2>
+  <p>Bihar is one of India’s most culturally and historically significant states, known for its role in the life of Lord Buddha, the ancient Nalanda University, and the Mauryan Empire. The land blends spirituality, history, and a rich cultural identity.</p>
+</section>
+
+<!-- Attractions -->
+<section id="attractions" class="container py-5">
+  <h2 class="section-title">Top Attractions</h2>
+  <div class="row">
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://www.holidify.com/images/bgImages/BODH-GAYA.jpg" alt="Bodh Gaya"><div class="card-body"><h5 class="card-title">Bodh Gaya</h5><p class="card-text">A UNESCO World Heritage site where Lord Buddha attained enlightenment under the Bodhi tree.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Gandhi_Maidan%2C_Patna.jpg" alt="Patna"><div class="card-body"><h5 class="card-title">Patna</h5><p class="card-text">The capital city, rich in museums, riverfront ghats, and historical landmarks.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://www.holidify.com/images/bgImages/NALANDA.jpg" alt="Nalanda"><div class="card-body"><h5 class="card-title">Nalanda</h5><p class="card-text">Ruins of the world’s oldest residential university, a center of learning in ancient India.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Rajgir%2C_Vishwa_Shanti_Stupa.jpg" alt="Rajgir"><div class="card-body"><h5 class="card-title">Rajgir</h5><p class="card-text">A sacred place associated with Buddha and Mahavira, featuring hot springs and peace pagoda.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Vaishali_Ashokan_Pillar.jpg" alt="Vaishali"><div class="card-body"><h5 class="card-title">Vaishali</h5><p class="card-text">One of the world’s first republics, important in both Buddhist and Jain traditions.</p></div></div></div>
+  </div>
+</section>
+
+<!-- Culture & Food -->
+<section id="culture" class="container py-5">
+  <h2 class="section-title">Culture & Food</h2>
+  <div class="row">
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Chhath_Puja_2013%2C_Bihar.jpg" alt="Chhath Puja"><div class="card-body"><h5 class="card-title">Chhath Puja</h5><p class="card-text">Bihar’s grand festival dedicated to the Sun God, celebrated with devotion along river ghats.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Litti_chokha.jpg" alt="Litti Chokha"><div class="card-body"><h5 class="card-title">Litti Chokha</h5><p class="card-text">The iconic dish of Bihar made with roasted wheat balls stuffed with spices, served with mashed veggies.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://www.holidify.com/images/cmsuploads/compressed/MadhubaniPainting_20180119215040.jpg" alt="Madhubani Art"><div class="card-body"><h5 class="card-title">Madhubani Art</h5><p class="card-text">The world-famous folk painting style that narrates stories of mythology and nature.</p></div></div></div>
+  </div>
+</section>
+
+<!-- Travel Info -->
+<section id="travel-info" class="container py-5">
+  <h2 class="section-title">Travel Information</h2>
+  <p><strong>Best Time to Visit:</strong> October to March for pleasant weather.</p>
+  <p><strong>How to Reach:</strong> By Air – Patna Airport; By Train – Patna & Gaya Junctions; By Road – Well-connected highways and buses.</p>
+  <p><strong>Local Transport:</strong> Auto-rickshaws, taxis, and buses are widely available.</p>
+</section>
+
+<!-- Map -->
+<section id="map" class="container py-5">
+  <h2 class="section-title">Map</h2>
+  <div class="embed-responsive embed-responsive-16by9" style="height:400px;">
+    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14664.684590684635!2d85.1375644!3d25.5940946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed5853d870ad7d%3A0x9f3e5ec7e69f1e!2sPatna%2C%20Bihar!5e0!3m2!1sen!2sin!4v1702561583745!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2025 DesiDwaar | <a href="#">Contact</a> | <a href="#">Other Destinations</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore Assam, the land of tea gardens and Brahmaputra. Discover Guwahati, Kaziranga, Majuli, Sivasagar, and Jorhat.">
+<title>Assam – The Land of Tea and Brahmaputra</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    body { font-family: 'Arial', sans-serif; background-color: #ffffff; color: #333; }
+    .navbar { background: linear-gradient(to right, #40e0d0, #f4e1c1); }
+    .navbar-brand { font-size: 1.8rem; font-weight: bold; color: #ff4500; }
+    .navbar-nav .nav-link { color: #333; font-size: 1.1rem; }
+    .navbar-nav .nav-link:hover { color: #ff4500; }
+    .btn-warning { font-weight: bold; }
+
+    /* Hero Section */
+    .hero {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+    .hero video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        filter: brightness(70%);
+    }
+    .hero-overlay {
+        background-color: rgba(255, 140, 0, 0.6);
+        padding: 3rem;
+        border-radius: 10px;
+    }
+
+    .section-title { font-size: 2.5rem; font-weight: bold; color: #ff4500; margin-bottom: 1.5rem; }
+
+    .card { border: none; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+    .card:hover { transform: scale(1.05); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-body { padding: 1.2rem; }
+    .card-title { font-size: 1.3rem; font-weight: bold; color: #333; }
+    .card-text { font-size: 1rem; color: #666; }
+
+    .footer { background-color: #f4e1c1; padding: 2rem 0; text-align: center; }
+    .footer a { color: #ff4500; text-decoration: none; margin: 0 1rem; font-size: 1.1rem; }
+    .footer a:hover { text-decoration: underline; }
+
+    html { scroll-behavior: smooth; }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html">DesiDwaar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
+            <li class="nav-item"><a class="nav-link" href="#culture">Culture & Food</a></li>
+            <li class="nav-item"><a class="nav-link" href="#travel-info">Travel Info</a></li>
+            <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
+            <li class="nav-item"><a class="btn btn-warning" href="#plan-trip">Plan Your Trip</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <video autoplay muted loop>
+        <source src="videos/assam.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay">
+        <div class="hero-text">
+            <h1>Assam – The Land of Tea and Brahmaputra</h1>
+            <p>Experience the beauty of Guwahati, Kaziranga, Majuli, Sivasagar, and Jorhat — where nature and heritage blend.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Introduction -->
+<section class="container py-5">
+    <h2 class="section-title">Introduction</h2>
+    <p>Assam, nestled in the northeastern part of India, is famous for its sprawling tea gardens, the mighty Brahmaputra River, and the one-horned rhinoceros of Kaziranga. With its vibrant culture, traditional Bihu dance, and unique cuisine, Assam offers a beautiful mix of nature, history, and traditions.</p>
+</section>
+
+<!-- Top Attractions -->
+<section id="attractions" class="container py-5">
+    <h2 class="section-title">Top Attractions</h2>
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Kamakhya_temple_in_Assaam_India.JPG" alt="Guwahati">
+                <div class="card-body"><h5 class="card-title">Guwahati</h5><p class="card-text">Home to the famous Kamakhya Temple and gateway to the Northeast.</p></div></div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Rhinoceros_in_Kaziranga%2C_Assam.jpg" alt="Kaziranga">
+                <div class="card-body"><h5 class="card-title">Kaziranga National Park</h5><p class="card-text">A UNESCO World Heritage Site, famous for the one-horned rhinoceros and diverse wildlife.</p></div></div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Majuli_Island.jpg" alt="Majuli">
+                <div class="card-body"><h5 class="card-title">Majuli</h5><p class="card-text">The world’s largest river island, known for its monasteries and cultural heritage.</p></div></div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Shiva_Doul_in_Sivasagar.jpg" alt="Sivasagar">
+                <div class="card-body"><h5 class="card-title">Sivasagar</h5><p class="card-text">Historic town with Ahom-era monuments, temples, and tanks.</p></div></div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Tea_Garden_in_Jorhat.jpg" alt="Jorhat">
+                <div class="card-body"><h5 class="card-title">Jorhat</h5><p class="card-text">Known as the ‘Tea Capital of the World’, surrounded by lush tea estates.</p></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- Culture & Food -->
+<section id="culture" class="container py-5">
+    <h2 class="section-title">Culture & Food</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Bihu_Dance_Assam.jpg" alt="Bihu Dance">
+                <div class="card-body"><h5 class="card-title">Bihu Festival</h5><p class="card-text">The most vibrant festival of Assam, celebrated with dance, music, and traditional feasts.</p></div></div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card"><img src="https://www.holidify.com/images/cmsuploads/compressed/Assamese_Thali_20190220160512.jpg" alt="Assamese Food">
+                <div class="card-body"><h5 class="card-title">Cuisine</h5><p class="card-text">Assamese food is simple yet flavorful — from fish curry to rice with exotic herbs.</p></div></div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Assam_Tea_Plantation.jpg" alt="Tea Gardens">
+                <div class="card-body"><h5 class="card-title">Tea Culture</h5><p class="card-text">World-renowned Assam tea is cultivated here, offering scenic views and tea tours.</p></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- Travel Info -->
+<section id="travel-info" class="container py-5">
+    <h2 class="section-title">Travel Information</h2>
+    <p><strong>Best Time to Visit:</strong> October to April for pleasant weather and festivals.</p>
+    <p><strong>How to Reach:</strong> By Air - Lokpriya Gopinath Bordoloi International Airport (Guwahati); By Train - Guwahati, Jorhat, Dibrugarh; By Road - National Highways from major cities.</p>
+    <p><strong>Local Transport:</strong> Buses, auto-rickshaws, shared cabs, and ferries (for Majuli).</p>
+</section>
+
+<!-- Map -->
+<section id="map" class="container py-5">
+    <h2 class="section-title">Map</h2>
+    <div class="embed-responsive embed-responsive-16by9" style="height:400px;">
+        <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14699.448213022462!2d91.7302473827732!3d26.14451679210768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a5bdfcd43b7fb%3A0x1c93e3f5b09df1b7!2sGuwahati%2C%20Assam!5e0!3m2!1sen!2sin!4v1702561583745" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2025 DesiDwaar | <a href="#">Contact</a> | <a href="#">Other Destinations</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

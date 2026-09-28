@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Vijayawada with DesiDwaar - Discover top attractions, local experiences, travel info, and plan your trip!">
+  <title>Vijayawada - DesiDwaar Tourism</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      background-color: #fdfcfb;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: linear-gradient(90deg, #40e0d0, #fdf5e6); /* same as Vizag website */
+    }
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.6rem;
+      color: #222;
+    }
+    .nav-link {
+      color: #222 !important;
+      font-weight: 500;
+    }
+    .nav-link:hover {
+      color: #ff8c00 !important;
+      transition: 0.3s;
+    }
+    .cta-btn {
+      background-color: #ff8c00;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 50px;
+      padding: 5px 20px;
+      transition: 0.3s;
+    }
+    .cta-btn:hover {
+      background-color: #222;
+      color: #ff8c00;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      background: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/b5/db/4f/prakasam-barrage.jpg?w=1200&h=-1&s=1') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.3);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      z-index: 1;
+      animation: fadeInDown 1.5s ease-in-out;
+    }
+    .hero p {
+      font-size: 1.3rem;
+      margin-top: 10px;
+      z-index: 1;
+      animation: fadeInUp 2s ease-in-out;
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Section Titles */
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin: 60px 0 30px;
+      font-weight: 700;
+      color: #ff8c00;
+    }
+
+    /* Top Attractions */
+    .attractions .card {
+      border: none;
+      overflow: hidden;
+      border-radius: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .attractions .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+    }
+    .attractions .card img {
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+    .attractions .card:hover img {
+      transform: scale(1.1);
+    }
+
+    /* Local Experiences */
+    .local-experiences .card {
+      border: none;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .local-experiences .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 8px 20px rgba(0,0,0,0.25);
+    }
+    .local-experiences img {
+      height: 150px;
+      object-fit: cover;
+    }
+
+    /* Travel Info */
+    .travel-info ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .travel-info li::before {
+      content: "✔";
+      color: #ff8c00;
+      margin-right: 8px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 40px 0;
+    }
+    footer a {
+      color: #ff8c00;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Map */
+    .map-container {
+      width: 100%;
+      height: 450px;
+      margin: 40px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">DesiDwaar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav me-3">
+          <li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#travel">Travel Info</a></li>
+          <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
+        </ul>
+        <a href="#booking" class="cta-btn">Plan Your Trip</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Vijayawada – The Heart of Andhra Pradesh</h1>
+    <p>Discover the charm, culture, and beauty of Vijayawada</p>
+  </section>
+
+  <!-- Introduction -->
+  <section class="container my-5">
+    <h2 class="section-title">Welcome to Vijayawada</h2>
+    <p class="text-center">Vijayawada is a vibrant city located on the banks of the Krishna River. Known for its rich cultural heritage, magnificent temples, and scenic landscapes, it offers travelers a perfect blend of history and modernity. With a warm climate and welcoming locals, Vijayawada is an ideal destination for sightseeing, food exploration, and experiencing festivals.</p>
+  </section>
+
+  <!-- Top Attractions -->
+  <section id="attractions" class="container my-5 attractions">
+    <h2 class="section-title">Top Attractions</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://www.poojn.in/wp-content/uploads/2025/02/Kanaka-Durga-Temple-A-Guide-to-Your-Visit.jpeg.jpg" alt="Kanaka Durga Temple" loading="lazy">
+          <div class="card-body">
+            <h5 class="card-title">Kanaka Durga Temple</h5>
+            <p class="card-text">A historic temple on Indrakeeladri Hill offering panoramic city views and spiritual ambiance.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/b5/db/4f/prakasam-barrage.jpg?w=1200&h=-1&s=1" alt="Prakasam Barrage" loading="lazy">
+          <div class="card-body">
+            <h5 class="card-title">Prakasam Barrage</h5>
+            <p class="card-text">A majestic structure over Krishna River, perfect for sunset views and photography.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://yometro.com/images/places/undavalli-caves.jpg" alt="Undavalli Caves" loading="lazy">
+          <div class="card-body">
+            <h5 class="card-title">Undavalli Caves</h5>
+            <p class="card-text">Ancient rock-cut caves featuring stunning sculptures and historical significance.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://myholidayhappiness.com/uploads/bhavani-island-7932.jpg" alt="Bhavani Island" loading="lazy">
+          <div class="card-body">
+            <h5 class="card-title">Bhavani Island</h5>
+            <p class="card-text">A beautiful island on Krishna River ideal for leisure, water sports, and nature walks.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://vijayawadatourism.com/images/places-to-visit/headers/gandhi-hill-vijayawada-entry-fee-timings-holidays-reviews-header.jpg" alt="Gandhi Hill" loading="lazy">
+          <div class="card-body">
+            <h5 class="card-title">Gandhi Hill</h5>
+            <p class="card-text">A peaceful hilltop park with a statue of Mahatma Gandhi and panoramic city views.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSULDihjVTz9ThQqXRq2zMpjyfp507J0TrHOg&s" alt="Bapu Museum" loading="lazy">
+          <div class="card-body">
+            <h5 class="card-title">Bapu Museum</h5>
+            <p class="card-text">Museum showcasing rich art, artifacts, and cultural history of Andhra Pradesh.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://s7ap1.scene7.com/is/image/incredibleindia/kondapalli-fort-guntur-andhra-pradesh-2-attr-hero?qlt=82&ts=1726743696048" alt="Kondapalli Fort" loading="lazy">
+          <div class="card-body">
+            <h5 class="card-title">Kondapalli Fort</h5>
+            <p class="card-text">Historic fort with panoramic views, famous for Kondapalli toys and heritage experience.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Local Experiences -->
+  <section id="experiences" class="container my-5 local-experiences">
+    <h2 class="section-title">Local Experiences</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2022/01/Street-foods-in-Andhra-Pradesh.jpg" alt="Street Food" loading="lazy">
+          <div class="card-body">
+            <h5 class="card-title">Street Food & Cuisine</h5>
+            <p class="card-text">Taste the vibrant flavors of Andhra street food, from spicy snacks to sweet treats.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://www.poojn.in/wp-content/uploads/2025/02/Kanaka-Durga-Temple-Festivals-A-Complete-Guide.jpeg.jpg" alt="Festival" loading="lazy">
+          <div class="card-body">
+            <h5 class="card-title">Festivals & Culture</h5>
+            <p class="card-text">Experience the grandeur of local festivals like Dasara and temple celebrations.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://d1msew97rp2nin.cloudfront.net/prodin/tntravel/blogimages/Morooco7-82a78a3e-5784-4851-b9bd-a1769cb946ed.webp" alt="Shopping" loading="lazy">
+          <div class="card-body">
+            <h5 class="card-title">Shopping & Markets</h5>
+            <p class="card-text">Explore local markets and pick up Kondapalli toys, handicrafts, and souvenirs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Travel Information -->
+  <section id="travel" class="container my-5 travel-info">
+    <h2 class="section-title">Travel Information</h2>
+    <ul>
+      <li>Best Time to Visit: October to March (pleasant climate)</li>
+      <li>By Air: Vijayawada Airport (VGA) connects to major Indian cities</li>
+      <li>By Train: Vijayawada Junction is well-connected with express trains</li>
+      <li>By Road: State buses, taxis, and private cabs are available</li>
+      <li>Local Transport: Auto-rickshaws, city buses, and taxis</li>
+    </ul>
+  </section>
+
+  <!-- Map -->
+  <section id="map" class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.5205041347655!2d80.62605327477501!3d16.50617468805043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f2041b1f78ff%3A0xb8bb27ad77d0f911!2sVijayawada%2C%20Andhra%20Pradesh%2C%20India!5e0!3m2!1sen!2sin!4v1691897154675!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p>&copy; 2025 DesiDwaar. All Rights Reserved.</p>
+      <p><a href="#">Contact Us</a> | <a href="#">Follow on Instagram</a></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

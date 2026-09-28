@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Calangute – the Queen of Beaches in Goa, famous for water sports and vibrant nightlife.">
+  <title>Calangute – The Queen of Beaches</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body { font-family: 'Arial', sans-serif; background-color: #ffffff; color: #333; }
+    .navbar { background: linear-gradient(to right, #ff9966, #ff5e62); }
+    .navbar-brand { font-size: 1.8rem; font-weight: bold; color: #fff; }
+    .navbar-nav .nav-link { color: #fff; font-size: 1.1rem; }
+    .navbar-nav .nav-link:hover { color: #333; }
+
+    /* Hero Section */
+    .hero {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+    .hero video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        filter: brightness(65%);
+    }
+    .hero-overlay {
+        background-color: rgba(255, 94, 98, 0.6);
+        padding: 3rem;
+        border-radius: 10px;
+    }
+    .hero-overlay h1 { font-size: 3rem; font-weight: bold; }
+    .hero-overlay p { font-size: 1.2rem; margin-top: 1rem; }
+
+    .section-title { font-size: 2.2rem; font-weight: bold; color: #ff5e62; margin-bottom: 1.5rem; }
+
+    .card { border: none; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+    .card:hover { transform: scale(1.05); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-body { padding: 1.2rem; }
+    .card-title { font-size: 1.3rem; font-weight: bold; color: #333; }
+    .card-text { font-size: 1rem; color: #555; }
+
+    .footer { background-color: #ff5e62; padding: 2rem 0; text-align: center; color: white; }
+    .footer a { color: #ffe4e1; text-decoration: none; margin: 0 1rem; font-size: 1.1rem; }
+    .footer a:hover { text-decoration: underline; }
+
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="index.html">DesiDwaar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#travel-info">Travel Info</a></li>
+          <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
+      </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <video autoplay muted loop>
+      <source src="https://videos.pexels.com/video-files/3070086/3070086-uhd_2560_1440_25fps.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay">
+      <h1>Calangute – The Queen of Beaches</h1>
+      <p>Famous for water sports, nightlife, and a lively atmosphere.</p>
+  </div>
+</section>
+
+<!-- Introduction -->
+<section class="container py-5">
+  <h2 class="section-title">Introduction</h2>
+  <p>Calangute, located in North Goa, is popularly known as the "Queen of Beaches." Bustling with tourists year-round, it’s the perfect destination for adventure, relaxation, and nightlife. From thrilling water sports to vibrant shacks and clubs, Calangute promises an unforgettable Goan experience.</p>
+</section>
+
+<!-- Attractions -->
+<section id="attractions" class="container py-5">
+  <h2 class="section-title">Top Attractions</h2>
+  <div class="row">
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://www.holidify.com/images/cmsuploads/compressed/Calangute_20180323125539.jpg" alt="Calangute Beach"><div class="card-body"><h5 class="card-title">Calangute Beach</h5><p class="card-text">The main attraction with golden sands, waves, and a buzzing vibe.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://www.holidify.com/images/cmsuploads/compressed/Baga_20180323130059.jpg" alt="Nearby Baga Beach"><div class="card-body"><h5 class="card-title">Baga Beach</h5><p class="card-text">Famous for clubs like Tito’s and Mambo’s, just next to Calangute.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://imgmedia.lbb.in/media/2022/11/636b3b68617b624b1aab0d07_1667979688286.jpg" alt="Beach Shacks"><div class="card-body"><h5 class="card-title">Beach Shacks</h5><p class="card-text">Chill at lively shacks with seafood, cocktails, and music by the sea.</p></div></div></div>
+  </div>
+</section>
+
+<!-- Experiences -->
+<section id="experiences" class="container py-5">
+  <h2 class="section-title">Local Experiences</h2>
+  <div class="row">
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://media-cdn.tripadvisor.com/media/photo-s/07/8d/9f/ef/calangute.jpg" alt="Water Sports"><div class="card-body"><h5 class="card-title">Water Sports</h5><p class="card-text">Try parasailing, jet skiing, and banana boat rides on the waves.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://www.holidify.com/images/cmsuploads/compressed/NightlifeGoa_20180323131324.jpg" alt="Nightlife"><div class="card-body"><h5 class="card-title">Nightlife</h5><p class="card-text">Experience vibrant nightlife with beach clubs and live music.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://static.toiimg.com/photo/64678321.cms" alt="Shopping"><div class="card-body"><h5 class="card-title">Shopping</h5><p class="card-text">Shop for clothes, jewelry, and souvenirs at Calangute Market.</p></div></div></div>
+  </div>
+</section>
+
+<!-- Travel Info -->
+<section id="travel-info" class="container py-5">
+  <h2 class="section-title">Travel Information</h2>
+  <p><strong>Best Time to Visit:</strong> November to March for beach fun and water sports.</p>
+  <p><strong>How to Reach:</strong> By Air - Dabolim Airport (40 km); By Train - Thivim Station (19 km); By Road - Well-connected by buses and cabs.</p>
+  <p><strong>Local Transport:</strong> Bike rentals, taxis, and auto-rickshaws are easily available.</p>
+</section>
+
+<!-- Map -->
+<section id="map" class="container py-5">
+  <h2 class="section-title">Map</h2>
+  <div class="embed-responsive embed-responsive-16by9" style="height:400px;">
+      <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3897.8027712952027!2d73.74297027546986!3d15.544954785071219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfea0e58d0b57f%3A0x85e6e660af5607c7!2sCalangute%20Beach!5e0!3m2!1sen!2sin!4v1700001111111" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2025 DesiDwaar | <a href="index.html">Home</a> | <a href="#">Contact</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

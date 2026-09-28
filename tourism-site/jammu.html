@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Jammu & Kashmir – Paradise on Earth. Discover Srinagar, Gulmarg, Pahalgam, Sonamarg, Katra, and Leh.">
+  <title>Jammu & Kashmir – Paradise on Earth</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body { font-family: 'Arial', sans-serif; background-color: #ffffff; color: #333; }
+    .navbar { background: linear-gradient(to right, #0066cc, #00cc99); }
+    .navbar-brand { font-size: 1.8rem; font-weight: bold; color: #fff; }
+    .navbar-nav .nav-link { color: #fff; font-size: 1.1rem; }
+    .navbar-nav .nav-link:hover { color: #ffd700; }
+    .btn-warning { font-weight: bold; }
+
+    /* Hero Section */
+    .hero {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+    .hero video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        filter: brightness(65%);
+        z-index: -1;
+    }
+    .hero-overlay {
+        background-color: rgba(0, 102, 204, 0.6);
+        padding: 3rem;
+        border-radius: 10px;
+        max-width: 750px;
+    }
+    .hero-overlay h1 { font-size: 3rem; font-weight: bold; }
+    .hero-overlay p { font-size: 1.2rem; margin-top: 1rem; }
+
+    .section-title { font-size: 2.5rem; font-weight: bold; color: #0066cc; margin-bottom: 1.5rem; }
+
+    .card { border: none; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+    .card:hover { transform: scale(1.05); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-body { padding: 1.2rem; }
+    .card-title { font-size: 1.3rem; font-weight: bold; color: #333; }
+    .card-text { font-size: 1rem; color: #666; }
+
+    .footer { background-color: #111; padding: 2rem 0; text-align: center; }
+    .footer a { color: #00cc99; text-decoration: none; margin: 0 1rem; font-size: 1.1rem; }
+    .footer a:hover { text-decoration: underline; }
+
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="#">DesiDwaar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
+      <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
+      <li class="nav-item"><a class="nav-link" href="#travel-info">Travel Info</a></li>
+      <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
+      <li class="nav-item"><a class="btn btn-warning" href="#plan-trip">Plan Your Trip</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <video autoplay muted loop>
+    <source src="https://videos.pexels.com/video-files/856193/856193-hd_1920_1080_25fps.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay">
+    <h1>Jammu & Kashmir – Paradise on Earth</h1>
+    <p>Snow-capped mountains, serene valleys, holy shrines, and breathtaking landscapes await you.</p>
+  </div>
+</section>
+
+<!-- Introduction -->
+<section class="container py-5">
+  <h2 class="section-title">Introduction</h2>
+  <p>Jammu & Kashmir, often called "Paradise on Earth," is famous for its pristine natural beauty, Mughal gardens, spiritual destinations, and adventure tourism. From Srinagar’s Dal Lake to Vaishno Devi in Katra and the rugged landscapes of Leh-Ladakh, this UT offers diverse experiences for every traveler.</p>
+</section>
+
+<!-- Attractions -->
+<section id="attractions" class="container py-5">
+  <h2 class="section-title">Top Attractions</h2>
+  <div class="row">
+    <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Dal_Lake_Srinagar.jpg" alt="Srinagar Dal Lake"><div class="card-body"><h5 class="card-title">Srinagar</h5><p class="card-text">The summer capital, known for Dal Lake, houseboats, and Mughal gardens.</p></div></div></div>
+    <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Gulmarg_valley.jpg" alt="Gulmarg"><div class="card-body"><h5 class="card-title">Gulmarg</h5><p class="card-text">A skiing and adventure hub surrounded by snow-clad peaks.</p></div></div></div>
+    <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Pahalgam_valley.jpg" alt="Pahalgam"><div class="card-body"><h5 class="card-title">Pahalgam</h5><p class="card-text">A picturesque valley, base for the Amarnath Yatra, known for rivers and pine forests.</p></div></div></div>
+    <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/d/df/Sonamarg_Valley.jpg" alt="Sonamarg"><div class="card-body"><h5 class="card-title">Sonamarg</h5><p class="card-text">The “Meadow of Gold,” a gateway to Himalayan treks and glaciers.</p></div></div></div>
+    <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Vaishno_Devi_Bhavan.jpg" alt="Katra Vaishno Devi"><div class="card-body"><h5 class="card-title">Katra (Vaishno Devi)</h5><p class="card-text">One of the most visited Hindu pilgrimage sites dedicated to Mata Vaishno Devi.</p></div></div></div>
+    <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Leh_Ladakh_View.jpg" alt="Leh Ladakh"><div class="card-body"><h5 class="card-title">Leh (Ladakh)</h5><p class="card-text">Famous for monasteries, Pangong Lake, Nubra Valley, and unique culture.</p></div></div></div>
+  </div>
+</section>
+
+<!-- Experiences -->
+<section id="experiences" class="container py-5">
+  <h2 class="section-title">Local Experiences</h2>
+  <div class="row">
+    <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Kashmiri_Kahwa.jpg" alt="Kashmiri Cuisine"><div class="card-body"><h5 class="card-title">Kashmiri Cuisine</h5><p class="card-text">Relish Wazwan, Rogan Josh, Gushtaba, and saffron-infused Kahwa tea.</p></div></div></div>
+    <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Pashmina_Shawl.jpg" alt="Shopping Pashmina"><div class="card-body"><h5 class="card-title">Pashmina Shopping</h5><p class="card-text">Shop exquisite Pashmina shawls, carpets, and handicrafts from Kashmir.</p></div></div></div>
+    <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Kashmir_Shikara.jpg" alt="Shikara Ride"><div class="card-body"><h5 class="card-title">Shikara Ride</h5><p class="card-text">A relaxing ride on Dal Lake, offering views of floating gardens and markets.</p></div></div></div>
+  </div>
+</section>
+
+<!-- Travel Info -->
+<section id="travel-info" class="container py-5">
+  <h2 class="section-title">Travel Information</h2>
+  <p><strong>Best Time to Visit:</strong> March–October for sightseeing; December–February for snow activities.</p>
+  <p><strong>How to Reach:</strong> By Air – Srinagar & Jammu Airports; By Train – Jammu Tawi Station; By Road – National highways from Delhi, Punjab, Himachal.</p>
+  <p><strong>Local Transport:</strong> Taxis, buses, pony rides in hill areas, and Shikara boats in Srinagar.</p>
+</section>
+
+<!-- Map -->
+<section id="map" class="container py-5">
+  <h2 class="section-title">Map</h2>
+  <div class="embed-responsive embed-responsive-16by9" style="height:400px;">
+    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2308873.7559305786!2d74.08375918785095!3d33.77817589307464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e10b5eb8f56f25%3A0x715d1ff7ed4a99e2!2sJammu%20and%20Kashmir!5e0!3m2!1sen!2sin!4v1702561583745" allowfullscreen></iframe>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2025 DesiDwaar | <a href="#">Contact</a> | <a href="#">Other Destinations</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Telangana – From the Charminar to ancient forts and rich traditions. Discover Hyderabad, Warangal, Nizamabad, and Khammam.">
+  <title>Telangana – Heritage & Modernity</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body { font-family: 'Arial', sans-serif; background-color: #ffffff; color: #333; }
+    .navbar { background: linear-gradient(to right, #7e57c2, #b39ddb); }
+    .navbar-brand { font-size: 1.8rem; font-weight: bold; color: #311b92; }
+    .navbar-nav .nav-link { color: #333; font-size: 1.1rem; }
+    .navbar-nav .nav-link:hover { color: #311b92; }
+    .btn-warning { font-weight: bold; }
+
+    /* Hero Section */
+    .hero {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+    .hero video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        filter: brightness(70%);
+    }
+    .hero-overlay {
+        background-color: rgba(49, 27, 146, 0.6);
+        padding: 3rem;
+        border-radius: 10px;
+        max-width: 750px;
+    }
+    .hero-overlay h1 { font-size: 3rem; font-weight: bold; }
+    .hero-overlay p { font-size: 1.2rem; margin-top: 1rem; }
+
+    .section-title { font-size: 2.5rem; font-weight: bold; color: #311b92; margin-bottom: 1.5rem; }
+
+    .card { border: none; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+    .card:hover { transform: scale(1.05); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-body { padding: 1.2rem; }
+    .card-title { font-size: 1.3rem; font-weight: bold; color: #333; }
+    .card-text { font-size: 1rem; color: #666; }
+
+    .footer { background-color: #b39ddb; padding: 2rem 0; text-align: center; }
+    .footer a { color: #311b92; text-decoration: none; margin: 0 1rem; font-size: 1.1rem; }
+    .footer a:hover { text-decoration: underline; }
+
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="index.html">DesiDwaar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#culture">Culture & Food</a></li>
+          <li class="nav-item"><a class="nav-link" href="#travel-info">Travel Info</a></li>
+          <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
+          <li class="nav-item"><a class="btn btn-warning" href="#plan-trip">Plan Your Trip</a></li>
+      </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <video autoplay muted loop>
+    <source src="videos/telangana.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay">
+    <h1>Telangana – Heritage & Modernity</h1>
+    <p>From the bustling streets of Hyderabad to the ancient forts of Warangal, Telangana blends culture, history, and innovation.</p>
+  </div>
+</section>
+
+<!-- Introduction -->
+<section class="container py-5">
+  <h2 class="section-title">Introduction</h2>
+  <p>Telangana, India’s youngest state, is a mix of old-world heritage and modern development. The capital Hyderabad is known for its IT hub, biryani, and Charminar, while cities like Warangal and Nizamabad reflect the state’s historical grandeur. With temples, forts, lakes, and cuisine, Telangana is a must-visit destination.</p>
+</section>
+
+<!-- Attractions -->
+<section id="attractions" class="container py-5">
+  <h2 class="section-title">Top Attractions</h2>
+  <div class="row">
+      <div class="col-md-6 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Charminar_Hyderabad_2021.jpg" alt="Hyderabad"><div class="card-body"><h5 class="card-title">Hyderabad</h5><p class="card-text">Home to Charminar, Golconda Fort, Ramoji Film City, and the famous Hyderabadi biryani.</p></div></div></div>
+      <div class="col-md-6 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Warangal_Fort_Entrance_02.jpg" alt="Warangal"><div class="card-body"><h5 class="card-title">Warangal</h5><p class="card-text">Known for its historical Warangal Fort, Thousand Pillar Temple, and Kakatiya heritage sites.</p></div></div></div>
+      <div class="col-md-6 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Nizamabad_Fort.jpg" alt="Nizamabad"><div class="card-body"><h5 class="card-title">Nizamabad</h5><p class="card-text">A city with a blend of history and modernity, famous for its fort and temples.</p></div></div></div>
+      <div class="col-md-6 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Khammam_Fort%2C_Telangana.jpg" alt="Khammam"><div class="card-body"><h5 class="card-title">Khammam</h5><p class="card-text">Famous for the Khammam Fort and serene nature spots like Lakaram Lake.</p></div></div></div>
+  </div>
+</section>
+
+<!-- Culture & Food -->
+<section id="culture" class="container py-5">
+  <h2 class="section-title">Culture & Food</h2>
+  <div class="row">
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Bathukamma_Festival.jpg" alt="Bathukamma Festival"><div class="card-body"><h5 class="card-title">Festivals</h5><p class="card-text">Bathukamma, a floral festival, is unique to Telangana and showcases its cultural vibrance.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Hyderabadi_Biryani.jpg" alt="Hyderabadi Biryani"><div class="card-body"><h5 class="card-title">Cuisine</h5><p class="card-text">Hyderabadi Biryani, Haleem, and Telangana’s spicy curries are world famous.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Golconda_Fort_Sound_and_Light_Show.jpg" alt="Culture"><div class="card-body"><h5 class="card-title">Heritage</h5><p class="card-text">Telangana’s forts, palaces, and Islamic architecture reflect its glorious past.</p></div></div></div>
+  </div>
+</section>
+
+<!-- Travel Info -->
+<section id="travel-info" class="container py-5">
+  <h2 class="section-title">Travel Information</h2>
+  <p><strong>Best Time to Visit:</strong> October to March for pleasant weather.</p>
+  <p><strong>How to Reach:</strong> By Air – Hyderabad International Airport; By Train – Major stations in Hyderabad, Warangal, Nizamabad; By Road – Well-connected highways.</p>
+  <p><strong>Local Transport:</strong> Metro, buses, auto-rickshaws, and cabs in Hyderabad; local transport in other cities.</p>
+</section>
+
+<!-- Map -->
+<section id="map" class="container py-5">
+  <h2 class="section-title">Map</h2>
+  <div class="embed-responsive embed-responsive-16by9" style="height:400px;">
+    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6217396.245457!2d77.0!3d17.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3350b1cf3629e1%3A0x403e12e81589f9f!2sTelangana!5e0!3m2!1sen!2sin!4v1702561583745!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2025 DesiDwaar | <a href="#">Contact</a> | <a href="#">Other Destinations</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

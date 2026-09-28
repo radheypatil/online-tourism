@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Dalhousie – A charming hill station with pine valleys, colonial architecture, and Himalayan beauty.">
+  <title>Dalhousie – Colonial Charm in the Himalayas</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body { font-family: 'Arial', sans-serif; background-color: #ffffff; color: #333; }
+    .navbar { background: linear-gradient(to right, #0f2027, #203a43, #2c5364); }
+    .navbar-brand { font-size: 1.8rem; font-weight: bold; color: #fff; }
+    .navbar-nav .nav-link { color: #fff; font-size: 1.1rem; }
+    .navbar-nav .nav-link:hover { color: #ffd700; }
+
+    /* Hero Section */
+    .hero {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        overflow: hidden;
+    }
+    .hero video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        filter: brightness(65%);
+    }
+    .hero-overlay {
+        background-color: rgba(15, 32, 39, 0.6);
+        padding: 3rem;
+        border-radius: 10px;
+    }
+    .hero-overlay h1 { font-size: 3rem; font-weight: bold; }
+    .hero-overlay p { font-size: 1.2rem; margin-top: 1rem; }
+
+    .section-title { font-size: 2.2rem; font-weight: bold; color: #203a43; margin-bottom: 1.5rem; }
+
+    .card { border: none; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+    .card:hover { transform: scale(1.05); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-body { padding: 1.2rem; }
+    .card-title { font-size: 1.3rem; font-weight: bold; color: #333; }
+    .card-text { font-size: 1rem; color: #555; }
+
+    .footer { background-color: #203a43; padding: 2rem 0; text-align: center; color: white; }
+    .footer a { color: #f4e6ff; text-decoration: none; margin: 0 1rem; font-size: 1.1rem; }
+    .footer a:hover { text-decoration: underline; }
+
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="index.html">DesiDwaar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#travel-info">Travel Info</a></li>
+          <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
+      </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <video autoplay muted loop>
+      <source src="https://videos.pexels.com/video-files/857176/857176-hd_1280_720_25fps.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay">
+      <h1>Dalhousie – Colonial Charm in the Himalayas</h1>
+      <p>A charming hill station with pine valleys, old churches, and a touch of British heritage.</p>
+  </div>
+</section>
+
+<!-- Introduction -->
+<section class="container py-5">
+  <h2 class="section-title">Introduction</h2>
+  <p>Dalhousie, located in Himachal Pradesh, is a picturesque hill station that retains its colonial charm with Victorian-style architecture, peaceful pine valleys, and breathtaking Himalayan views. Spread across five hills, Dalhousie offers a tranquil retreat away from the chaos of city life, making it an ideal destination for honeymooners, families, and nature lovers alike.</p>
+</section>
+
+<!-- Attractions -->
+<section id="attractions" class="container py-5">
+  <h2 class="section-title">Top Attractions</h2>
+  <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.holidify.com/images/cmsuploads/compressed/Khajjiar_20180329172549.jpg" alt="Khajjiar">
+          <div class="card-body">
+            <h5 class="card-title">Khajjiar</h5>
+            <p class="card-text">Known as the ‘Mini Switzerland of India’, with meadows, pine forests, and a serene lake.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.holidify.com/images/cmsuploads/compressed/StJohnChurchDalhousie_20190710150118.jpg" alt="St. John’s Church">
+          <div class="card-body">
+            <h5 class="card-title">St. John’s Church</h5>
+            <p class="card-text">A historic church built during British rule, reflecting colonial architecture and calm surroundings.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.holidify.com/images/cmsuploads/compressed/DainkundPeak_20180329173923.jpg" alt="Dainkund Peak">
+          <div class="card-body">
+            <h5 class="card-title">Dainkund Peak</h5>
+            <p class="card-text">The highest point in Dalhousie offering panoramic views of snow-clad mountains and valleys.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- Experiences -->
+<section id="experiences" class="container py-5">
+  <h2 class="section-title">Local Experiences</h2>
+  <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.holidify.com/images/cmsuploads/compressed/Mall_Road_Dalhousie_20180329174318.jpg" alt="Mall Road Walks">
+          <div class="card-body">
+            <h5 class="card-title">Mall Road Walks</h5>
+            <p class="card-text">Stroll along Mall Road lined with shops, cafés, and handicrafts for a relaxed evening.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.holidify.com/images/cmsuploads/compressed/trekking-in-dalhousie_20180329174720.jpg" alt="Trekking & Nature Walks">
+          <div class="card-body">
+            <h5 class="card-title">Trekking & Nature Walks</h5>
+            <p class="card-text">Enjoy trails through pine forests and meadows, offering both peace and adventure.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.holidify.com/images/cmsuploads/compressed/chamba-market_20180329175218.jpg" alt="Local Markets">
+          <div class="card-body">
+            <h5 class="card-title">Local Markets</h5>
+            <p class="card-text">Shop for Himachali woolens, handicrafts, and souvenirs in the lively Tibetan & Chamba markets.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- Travel Info -->
+<section id="travel-info" class="container py-5">
+  <h2 class="section-title">Travel Information</h2>
+  <p><strong>Best Time to Visit:</strong> March to June for pleasant summers; December to February for snowfall and winter beauty.</p>
+  <p><strong>How to Reach:</strong> By Air – Pathankot Airport (75 km); By Train – Pathankot Railway Station (80 km); By Road – Well connected by buses and taxis from Delhi, Amritsar, and Chandigarh.</p>
+  <p><strong>Local Transport:</strong> Taxis and local buses are available; walking is best for exploring within town.</p>
+</section>
+
+<!-- Map -->
+<section id="map" class="container py-5">
+  <h2 class="section-title">Map</h2>
+  <div class="embed-responsive embed-responsive-16by9" style="height:400px;">
+      <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3435.5317605935166!2d75.99854617557665!3d32.53828377376638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391c7b4faaaaaaab%3A0x6f3b3bb76d0b98a0!2sDalhousie%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1700008888888" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2025 DesiDwaar | <a href="index.html">Home</a> | <a href="#">Contact</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

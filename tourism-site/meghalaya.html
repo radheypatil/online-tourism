@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Meghalaya – The Abode of Clouds. Discover Shillong, Cherrapunji, Dawki, Mawlynnong, Jowai and more.">
+  <title>Meghalaya – The Abode of Clouds</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body { font-family: 'Arial', sans-serif; background-color: #ffffff; color: #333; }
+    .navbar { background: linear-gradient(to right, #80deea, #a5d6a7); }
+    .navbar-brand { font-size: 1.8rem; font-weight: bold; color: #004d40; }
+    .navbar-nav .nav-link { color: #333; font-size: 1.1rem; }
+    .navbar-nav .nav-link:hover { color: #004d40; }
+    .btn-warning { font-weight: bold; }
+
+    /* Hero Section */
+    .hero {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+    .hero video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        filter: brightness(65%);
+    }
+    .hero-overlay {
+        background-color: rgba(0, 77, 64, 0.6); /* dark green overlay */
+        padding: 3rem;
+        border-radius: 10px;
+        max-width: 700px;
+    }
+    .hero-overlay h1 { font-size: 3rem; font-weight: bold; }
+    .hero-overlay p { font-size: 1.2rem; margin-top: 1rem; }
+
+    .section-title { font-size: 2.5rem; font-weight: bold; color: #004d40; margin-bottom: 1.5rem; }
+
+    .card { border: none; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+    .card:hover { transform: scale(1.05); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-body { padding: 1.2rem; }
+    .card-title { font-size: 1.3rem; font-weight: bold; color: #333; }
+    .card-text { font-size: 1rem; color: #666; }
+
+    .footer { background-color: #a5d6a7; padding: 2rem 0; text-align: center; }
+    .footer a { color: #004d40; text-decoration: none; margin: 0 1rem; font-size: 1.1rem; }
+    .footer a:hover { text-decoration: underline; }
+
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="index.html">DesiDwaar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#culture">Culture & Food</a></li>
+          <li class="nav-item"><a class="nav-link" href="#travel-info">Travel Info</a></li>
+          <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
+          <li class="nav-item"><a class="btn btn-warning" href="#plan-trip">Plan Your Trip</a></li>
+      </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <video autoplay muted loop>
+    <source src="videos/meghalaya.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay">
+    <h1>Meghalaya – The Abode of Clouds</h1>
+    <p>Land of misty hills, roaring waterfalls, sacred forests, and vibrant tribal culture.</p>
+  </div>
+</section>
+
+<!-- Introduction -->
+<section class="container py-5">
+  <h2 class="section-title">Introduction</h2>
+  <p>Meghalaya, meaning “Abode of Clouds,” is one of the most scenic states in India. With lush green landscapes, some of the world’s heaviest rainfall, living root bridges, and breathtaking valleys, Meghalaya is nature’s paradise. Its capital Shillong is often called the “Scotland of the East.”</p>
+</section>
+
+<!-- Attractions -->
+<section id="attractions" class="container py-5">
+  <h2 class="section-title">Top Attractions</h2>
+  <div class="row">
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Umiam_Lake_Shillong.jpg" alt="Shillong"><div class="card-body"><h5 class="card-title">Shillong</h5><p class="card-text">The charming capital city, famous for Umiam Lake, Elephant Falls, Ward’s Lake, and vibrant nightlife.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Nohkalikai_falls_cherrapunji.jpg" alt="Cherrapunji"><div class="card-body"><h5 class="card-title">Cherrapunji (Sohra)</h5><p class="card-text">Known for heavy rainfall, living root bridges, and Nohkalikai Falls – the tallest plunge waterfall in India.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Mawlynnong_village.jpg" alt="Mawlynnong"><div class="card-body"><h5 class="card-title">Mawlynnong</h5><p class="card-text">Dubbed the “Cleanest Village in Asia,” it offers bamboo walkways, root bridges, and serene nature.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Dawki_River.jpg" alt="Dawki"><div class="card-body"><h5 class="card-title">Dawki</h5><p class="card-text">Home to the crystal-clear Umngot River, where boats seem to float in the air.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Lake_in_Jowai_Meghalaya.jpg" alt="Jowai"><div class="card-body"><h5 class="card-title">Jowai</h5><p class="card-text">Famous for lakes, waterfalls, and rich Pnar tribal culture, making it a hidden gem of Meghalaya.</p></div></div></div>
+  </div>
+</section>
+
+<!-- Culture & Food -->
+<section id="culture" class="container py-5">
+  <h2 class="section-title">Culture & Food</h2>
+  <div class="row">
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Shad_Suk_Mynsiem_festival_Meghalaya.jpg" alt="Khasi Dance"><div class="card-body"><h5 class="card-title">Khasi Dance</h5><p class="card-text">Traditional Khasi dances, performed during festivals, celebrate nature and community life.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Jadoh.jpg" alt="Meghalaya Food"><div class="card-body"><h5 class="card-title">Meghalayan Cuisine</h5><p class="card-text">Popular dishes include Jadoh (rice with meat), Dohneiiong (pork curry), and Tungrymbai (fermented soybean).</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Wangala_festival.jpg" alt="Wangala Festival"><div class="card-body"><h5 class="card-title">Wangala Festival</h5><p class="card-text">A major Garo festival, also called the “100 Drums Festival,” celebrating harvest and music.</p></div></div></div>
+  </div>
+</section>
+
+<!-- Travel Info -->
+<section id="travel-info" class="container py-5">
+  <h2 class="section-title">Travel Information</h2>
+  <p><strong>Best Time to Visit:</strong> October to April, when the weather is pleasant and waterfalls are in full flow.</p>
+  <p><strong>How to Reach:</strong> By Air – Shillong Airport and Guwahati (Assam) nearby; By Road – Well-connected by NH40; By Train – Nearest railhead is Guwahati.</p>
+  <p><strong>Local Transport:</strong> Taxis, shared cabs, and local buses are common in cities and towns.</p>
+</section>
+
+<!-- Map -->
+<section id="map" class="container py-5">
+  <h2 class="section-title">Map</h2>
+  <div class="embed-responsive embed-responsive-16by9" style="height:400px;">
+    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7307930.96209412!2d88.5!3d25.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3743f2f30b6f5b0f%3A0xbda8f50bbdf02d!2sMeghalaya!5e0!3m2!1sen!2sin!4v1702561583745!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2025 DesiDwaar | <a href="#">Contact</a> | <a href="#">Other Destinations</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

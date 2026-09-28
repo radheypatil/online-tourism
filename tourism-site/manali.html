@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Manali – A hub for adventure sports, snow activities, and romantic getaways in the Himalayas.">
+  <title>Manali – Adventure & Honeymoon Haven</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body { font-family: 'Arial', sans-serif; background-color: #ffffff; color: #333; }
+    .navbar { background: linear-gradient(to right, #11998e, #38ef7d); }
+    .navbar-brand { font-size: 1.8rem; font-weight: bold; color: #fff; }
+    .navbar-nav .nav-link { color: #fff; font-size: 1.1rem; }
+    .navbar-nav .nav-link:hover { color: #ffd700; }
+
+    /* Hero Section */
+    .hero {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        overflow: hidden;
+    }
+    .hero video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        filter: brightness(65%);
+    }
+    .hero-overlay {
+        background-color: rgba(17, 153, 142, 0.6);
+        padding: 3rem;
+        border-radius: 10px;
+    }
+    .hero-overlay h1 { font-size: 3rem; font-weight: bold; }
+    .hero-overlay p { font-size: 1.2rem; margin-top: 1rem; }
+
+    .section-title { font-size: 2.2rem; font-weight: bold; color: #11998e; margin-bottom: 1.5rem; }
+
+    .card { border: none; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+    .card:hover { transform: scale(1.05); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-body { padding: 1.2rem; }
+    .card-title { font-size: 1.3rem; font-weight: bold; color: #333; }
+    .card-text { font-size: 1rem; color: #555; }
+
+    .footer { background-color: #11998e; padding: 2rem 0; text-align: center; color: white; }
+    .footer a { color: #e0f7ec; text-decoration: none; margin: 0 1rem; font-size: 1.1rem; }
+    .footer a:hover { text-decoration: underline; }
+
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="index.html">DesiDwaar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#travel-info">Travel Info</a></li>
+          <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
+      </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <video autoplay muted loop>
+      <source src="https://www.pexels.com/download/video/857198/?format=mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay">
+      <h1>Manali – Adventure & Honeymoon Haven</h1>
+      <p>A hub for adventure sports, snow activities, and romantic getaways.</p>
+  </div>
+</section>
+
+<!-- Introduction -->
+<section class="container py-5">
+  <h2 class="section-title">Introduction</h2>
+  <p>Manali, nestled in the Kullu Valley of Himachal Pradesh, is a dream destination for adventure seekers, honeymooners, and nature lovers. Surrounded by snow-capped peaks and pine forests, Manali offers everything from thrilling river rafting and paragliding to serene temple visits and cozy mountain stays. It is also a gateway to Leh–Ladakh and the famous Rohtang Pass.</p>
+</section>
+
+<!-- Attractions -->
+<section id="attractions" class="container py-5">
+  <h2 class="section-title">Top Attractions</h2>
+  <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.holidify.com/images/cmsuploads/compressed/hidimba-devi-temple_20180322161051.jpg" alt="Hidimba Temple">
+          <div class="card-body">
+            <h5 class="card-title">Hidimba Devi Temple</h5>
+            <p class="card-text">An ancient cave temple dedicated to Hidimba Devi, surrounded by cedar forests.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.holidify.com/images/cmsuploads/compressed/Rohtang-Pass-Manali_20180322163124.jpg" alt="Rohtang Pass">
+          <div class="card-body">
+            <h5 class="card-title">Rohtang Pass</h5>
+            <p class="card-text">A high mountain pass offering snow sports and breathtaking views of glaciers and peaks.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.holidify.com/images/cmsuploads/compressed/solang_valley_20181115151616.jpg" alt="Solang Valley">
+          <div class="card-body">
+            <h5 class="card-title">Solang Valley</h5>
+            <p class="card-text">The adventure capital of Manali with skiing, paragliding, and zorbing activities.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- Experiences -->
+<section id="experiences" class="container py-5">
+  <h2 class="section-title">Local Experiences</h2>
+  <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.holidify.com/images/cmsuploads/compressed/manali-paragliding_20180322163953.jpg" alt="Paragliding Manali">
+          <div class="card-body">
+            <h5 class="card-title">Paragliding</h5>
+            <p class="card-text">Soar over the valleys of Manali and enjoy an adrenaline-filled sky adventure.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.holidify.com/images/cmsuploads/compressed/river-rafting-in-manali_20180322164650.jpg" alt="River Rafting">
+          <div class="card-body">
+            <h5 class="card-title">River Rafting</h5>
+            <p class="card-text">Experience thrilling rafting on the Beas River with stunning mountain backdrops.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.holidify.com/images/cmsuploads/compressed/manali-hot-springs_20180322165342.jpg" alt="Vashisht Hot Springs">
+          <div class="card-body">
+            <h5 class="card-title">Vashisht Hot Springs</h5>
+            <p class="card-text">Relax in natural hot water springs believed to have healing properties.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- Travel Info -->
+<section id="travel-info" class="container py-5">
+  <h2 class="section-title">Travel Information</h2>
+  <p><strong>Best Time to Visit:</strong> March to June for adventure activities; December to February for snow and honeymoon trips.</p>
+  <p><strong>How to Reach:</strong> By Air - Bhuntar Airport (50 km); By Road - Well-connected to Delhi, Chandigarh, and Shimla; By Train - Joginder Nagar (closest narrow-gauge railway).</p>
+  <p><strong>Local Transport:</strong> Taxis, buses, and bike rentals are popular for exploring nearby attractions.</p>
+</section>
+
+<!-- Map -->
+<section id="map" class="container py-5">
+  <h2 class="section-title">Map</h2>
+  <div class="embed-responsive embed-responsive-16by9" style="height:400px;">
+      <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3431.8270651605037!2d77.18359257558072!3d32.24318787448545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390487d659d49a13%3A0xcfe740a2f5bb0f27!2sManali%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1700006666666" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2025 DesiDwaar | <a href="index.html">Home</a> | <a href="#">Contact</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

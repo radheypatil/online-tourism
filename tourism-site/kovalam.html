@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore Kovalam, Kerala’s beach paradise with golden sands, lighthouse views, and thrilling water sports.">
+<title>Kovalam – Kerala’s Beach Paradise</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    body { font-family: 'Arial', sans-serif; background-color: #ffffff; color: #333; }
+    .navbar { background: linear-gradient(to right, #1e3c72, #2a5298); }
+    .navbar-brand { font-size: 1.8rem; font-weight: bold; color: #fff; }
+    .navbar-nav .nav-link { color: #fff; font-size: 1.1rem; }
+    .navbar-nav .nav-link:hover { color: #f1c40f; }
+
+    /* Hero Section */
+    .hero {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+    .hero video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        filter: brightness(70%);
+    }
+    .hero-overlay {
+        background-color: rgba(30, 60, 114, 0.6);
+        padding: 3rem;
+        border-radius: 10px;
+    }
+    .hero-overlay h1 { font-size: 3rem; font-weight: bold; }
+    .hero-overlay p { font-size: 1.2rem; margin-top: 1rem; }
+
+    .section-title { font-size: 2.2rem; font-weight: bold; color: #1e3c72; margin-bottom: 1.5rem; }
+
+    .card { border: none; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+    .card:hover { transform: scale(1.05); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-body { padding: 1.2rem; }
+    .card-title { font-size: 1.3rem; font-weight: bold; color: #333; }
+    .card-text { font-size: 1rem; color: #555; }
+
+    .footer { background-color: #2a5298; padding: 2rem 0; text-align: center; color: white; }
+    .footer a { color: #f1c40f; text-decoration: none; margin: 0 1rem; font-size: 1.1rem; }
+    .footer a:hover { text-decoration: underline; }
+
+    html { scroll-behavior: smooth; }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">DesiDwaar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
+            <li class="nav-item"><a class="nav-link" href="#travel-info">Travel Info</a></li>
+            <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <video autoplay muted loop>
+        <source src="https://videos.pexels.com/video-files/857195/857195-hd_1920_1080_24fps.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay">
+        <h1>Kovalam – Kerala’s Beach Paradise</h1>
+        <p>Golden sands, lighthouse views, and thrilling water adventures by the Arabian Sea.</p>
+    </div>
+</section>
+
+<!-- Introduction -->
+<section class="container py-5">
+    <h2 class="section-title">Introduction</h2>
+    <p>Kovalam, located just 16 km from Thiruvananthapuram, is one of Kerala’s most celebrated beach destinations. Known for its crescent-shaped coastline, iconic lighthouse, and calm waters, it is the perfect place to relax or indulge in water sports like surfing and parasailing. Kovalam has long been a global tourist favorite, offering sun, sand, and serenity.</p>
+</section>
+
+<!-- Attractions -->
+<section id="attractions" class="container py-5">
+    <h2 class="section-title">Top Attractions</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://www.keralatourism.org/images/destination/large/lighthouse_beach_kovalam20131031113224_56_1.jpg" alt="Lighthouse Beach"><div class="card-body"><h5 class="card-title">Lighthouse Beach</h5><p class="card-text">The most popular beach in Kovalam, featuring a red-and-white striped lighthouse with panoramic views.</p></div></div></div>
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://media-cdn.tripadvisor.com/media/photo-s/16/94/05/b5/hawah-beach.jpg" alt="Hawah Beach"><div class="card-body"><h5 class="card-title">Hawah Beach</h5><p class="card-text">A quieter spot perfect for peaceful walks, sunbathing, and swimming.</p></div></div></div>
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://www.trawell.in/admin/images/upload/247943725KovalamBeach_Main.jpg" alt="Samudra Beach"><div class="card-body"><h5 class="card-title">Samudra Beach</h5><p class="card-text">Less crowded and ideal for solitude, evening walks, and fishing scenes.</p></div></div></div>
+    </div>
+</section>
+
+<!-- Experiences -->
+<section id="experiences" class="container py-5">
+    <h2 class="section-title">Local Experiences</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://www.thrillophilia.com/blog/wp-content/uploads/2018/04/Kayaking-Kovalam.jpg" alt="Water Sports"><div class="card-body"><h5 class="card-title">Water Sports</h5><p class="card-text">Try parasailing, surfing, and kayaking in the Arabian Sea.</p></div></div></div>
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://www.abhibus.com/blog/wp-content/uploads/2023/07/ayurvedic-massage-in-kerala.jpg" alt="Ayurvedic Massage"><div class="card-body"><h5 class="card-title">Ayurvedic Massage</h5><p class="card-text">Rejuvenate with authentic Ayurvedic spa treatments offered at beachside resorts.</p></div></div></div>
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://assets-news.housing.com/news/wp-content/uploads/2022/09/05010144/Kerala-food-.jpg" alt="Kerala Cuisine"><div class="card-body"><h5 class="card-title">Kerala Cuisine</h5><p class="card-text">Savor seafood delicacies like Karimeen fry, prawn curry, and Sadya meals.</p></div></div></div>
+    </div>
+</section>
+
+<!-- Travel Info -->
+<section id="travel-info" class="container py-5">
+<h2 class="section-title">Travel Information</h2>
+<p><strong>Best Time to Visit:</strong> September to March for pleasant beach weather.</p>
+<p><strong>How to Reach:</strong> By Air - Trivandrum International Airport (15 km away); By Train - Trivandrum Central; By Road - Well connected by taxis and buses.</p>
+<p><strong>Local Transport:</strong> Taxis, bikes for rent, and auto-rickshaws are common.</p>
+</section>
+
+<!-- Map -->
+<section id="map" class="container py-5">
+<h2 class="section-title">Map</h2>
+<div class="embed-responsive embed-responsive-16by9" style="height:400px;">
+<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.523932244609!2d76.97873617474203!3d8.400408591611845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bbb6949eb6af%3A0xe2586cfb7c35c6b!2sKovalam%20Beach!5e0!3m2!1sen!2sin!4v1700000000000" allowfullscreen="" loading="lazy"></iframe>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+<p>&copy; 2025 DesiDwaar | <a href="index.html">Home</a> | <a href="#">Contact</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

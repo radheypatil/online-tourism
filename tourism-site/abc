@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore Rajasthan – The Land of Kings. Discover forts, palaces, deserts, culture, food, and royal experiences.">
+<title>Rajasthan – The Land of Kings</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    body { font-family: 'Arial', sans-serif; background-color: #fff; color: #333; margin: 0; padding: 0; }
+    .navbar { background: linear-gradient(to right, #ff9966, #ff5e62); }
+    .navbar-brand { font-size: 1.8rem; font-weight: bold; color: #fff; }
+    .navbar-nav .nav-link { color: #fff; font-size: 1.1rem; }
+    .navbar-nav .nav-link:hover { color: #ffe066; }
+    .btn-warning { font-weight: bold; }
+
+    /* Hero Section with Video */
+    .hero {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+    .hero video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        filter: brightness(70%);
+    }
+    .hero-overlay {
+        background-color: rgba(178, 34, 34, 0.5);
+        padding: 3rem;
+        border-radius: 10px;
+    }
+    .hero-text h1 { font-size: 3rem; font-weight: bold; color: #fff; }
+    .hero-text p { font-size: 1.2rem; color: #fff; margin-top: 1rem; }
+
+    .section-title { font-size: 2.5rem; font-weight: bold; color: #ff5e62; margin-bottom: 1.5rem; }
+
+    .card { border: none; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+    .card:hover { transform: scale(1.05); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-body { padding: 1.2rem; }
+    .card-title { font-size: 1.3rem; font-weight: bold; color: #333; }
+    .card-text { font-size: 1rem; color: #666; }
+
+    .footer { background-color: #222; color: #eee; padding: 2rem 0; text-align: center; }
+    .footer a { color: #ff9966; text-decoration: none; margin: 0 1rem; font-size: 1.1rem; }
+    .footer a:hover { text-decoration: underline; }
+
+    html { scroll-behavior: smooth; }
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">DesiDwaar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experiences">Culture & Food</a></li>
+            <li class="nav-item"><a class="nav-link" href="#travel-info">Travel Info</a></li>
+            <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
+            <li class="nav-item"><a class="btn btn-warning" href="#plan-trip">Plan Your Trip</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero with Video -->
+<section class="hero">
+    <video autoplay muted loop playsinline>
+        <source src="https://videos.pexels.com/video-files/18983873/18983873-uhd_2560_1440_25fps.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay">
+        <div class="hero-text">
+            <h1>Rajasthan – The Land of Kings</h1>
+            <p>Explore royal forts, desert safaris, colorful festivals, and the rich cuisine of India’s largest state.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Introduction -->
+<section class="container py-5">
+    <h2 class="section-title">Introduction</h2>
+    <p>Rajasthan, India’s largest state, is a vibrant tapestry of history, culture, and landscapes. From the pink city of Jaipur to the blue city of Jodhpur, the golden dunes of Jaisalmer, and the lakes of Udaipur, every corner has its own charm. Known for royal palaces, desert adventures, folk dances, and cuisines like <b>Dal Baati Churma</b> and <b>Laal Maas</b>, Rajasthan is an unforgettable journey into India’s heritage.</p>
+</section>
+
+<!-- Top Attractions -->
+<section id="attractions" class="container py-5">
+    <h2 class="section-title">Top Attractions</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://www.holidify.com/images/compressed/attractions/attr_1037.jpg" alt="Jaipur"><div class="card-body"><h5 class="card-title">Jaipur</h5><p class="card-text">The Pink City, home to Hawa Mahal, Amer Fort, and vibrant bazaars.</p></div></div></div>
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://www.holidify.com/images/bgImages/UDAIPUR.jpg" alt="Udaipur"><div class="card-body"><h5 class="card-title">Udaipur</h5><p class="card-text">The City of Lakes, famous for City Palace, Pichola Lake, and romantic views.</p></div></div></div>
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://www.holidify.com/images/bgImages/JODHPUR.jpg" alt="Jodhpur"><div class="card-body"><h5 class="card-title">Jodhpur</h5><p class="card-text">The Blue City, crowned by Mehrangarh Fort and blue-painted streets.</p></div></div></div>
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://www.holidify.com/images/bgImages/JAISALMER.jpg" alt="Jaisalmer"><div class="card-body"><h5 class="card-title">Jaisalmer</h5><p class="card-text">The Golden City, famous for Jaisalmer Fort and desert camel safaris.</p></div></div></div>
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://www.holidify.com/images/bgImages/AJMER.jpg" alt="Ajmer"><div class="card-body"><h5 class="card-title">Ajmer</h5><p class="card-text">Known for Ajmer Sharif Dargah, a major Sufi pilgrimage site.</p></div></div></div>
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://www.holidify.com/images/bgImages/MOUNT-ABU.jpg" alt="Mount Abu"><div class="card-body"><h5 class="card-title">Mount Abu</h5><p class="card-text">The hill station of Rajasthan, famous for Dilwara Temples and Nakki Lake.</p></div></div></div>
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://www.holidify.com/images/bgImages/BIKANER.jpg" alt="Bikaner"><div class="card-body"><h5 class="card-title">Bikaner</h5><p class="card-text">Known for Junagarh Fort and the world-famous Bikaneri bhujia.</p></div></div></div>
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://www.holidify.com/images/bgImages/CHITTORGARH.jpg" alt="Chittorgarh"><div class="card-body"><h5 class="card-title">Chittorgarh</h5><p class="card-text">Home to the grand Chittorgarh Fort, symbol of Rajput pride.</p></div></div></div>
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://www.holidify.com/images/bgImages/PUSHKAR.jpg" alt="Pushkar"><div class="card-body"><h5 class="card-title">Pushkar</h5><p class="card-text">A holy city famous for Pushkar Lake and the annual Camel Fair.</p></div></div></div>
+    </div>
+</section>
+
+<!-- Culture & Food -->
+<section id="experiences" class="container py-5">
+    <h2 class="section-title">Culture & Food</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://www.holidify.com/images/cmsuploads/compressed/shutterstock_1436357884_20200217141251.jpg" alt="Folk Dance"><div class="card-body"><h5 class="card-title">Folk Dance</h5><p class="card-text">Enjoy Kalbeliya and Ghoomar, traditional Rajasthani folk dances.</p></div></div></div>
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://www.holidify.com/images/cmsuploads/compressed/800px-Dal_bati_churma_01_20180309153316.jpg" alt="Dal Baati Churma"><div class="card-body"><h5 class="card-title">Dal Baati Churma</h5><p class="card-text">The iconic Rajasthani dish loved across India.</p></div></div></div>
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://www.holidify.com/images/cmsuploads/compressed/Laal_Maas_20180309153316.jpg" alt="Laal Maas"><div class="card-body"><h5 class="card-title">Laal Maas</h5><p class="card-text">A fiery meat curry that reflects Rajasthan’s royal flavors.</p></div></div></div>
+    </div>
+</section>
+
+<!-- Travel Info -->
+<section id="travel-info" class="container py-5">
+<h2 class="section-title">Travel Information</h2>
+<p><strong>Best Time to Visit:</strong> October to March for pleasant weather and festivals.</p>
+<p><strong>How to Reach:</strong> By Air - Jaipur, Udaipur, and Jodhpur airports; By Train - Major cities well connected; By Road - National highways connect Rajasthan to India.</p>
+<p><strong>Local Transport:</strong> Autos, taxis, camel rides, and local buses available.</p>
+</section>
+
+<!-- Map -->
+<section id="map" class="container py-5">
+<h2 class="section-title">Map of Rajasthan</h2>
+<div class="embed-responsive embed-responsive-16by9" style="height:400px;">
+<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682191.49281946!2d69.98938237022937!3d27.023803591773875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396a3ef0c8df77ed%3A0x9c8b9e85f6c3f45a!2sRajasthan!5e0!3m2!1sen!2sin!4v1702561583745!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+<p>&copy; 2025 DesiDwaar | <a href="#">Contact</a> | <a href="#">Other Destinations</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

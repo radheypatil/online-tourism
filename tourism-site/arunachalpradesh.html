@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore Arunachal Pradesh, the land of dawn-lit mountains. Discover Tawang, Ziro, Itanagar, Bomdila and immerse yourself in culture, food, and festivals.">
+<title>Arunachal Pradesh – The Land of Dawn-Lit Mountains</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    body { font-family: 'Arial', sans-serif; background-color: #ffffff; color: #333; }
+    .navbar { background: linear-gradient(to right, #40e0d0, #f4e1c1); }
+    .navbar-brand { font-size: 1.8rem; font-weight: bold; color: #ff4500; }
+    .navbar-nav .nav-link { color: #333; font-size: 1.1rem; }
+    .navbar-nav .nav-link:hover { color: #ff4500; }
+    .btn-warning { font-weight: bold; }
+
+    /* Hero Section */
+    .hero {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+    .hero video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        filter: brightness(70%);
+    }
+    .hero-overlay {
+        background-color: rgba(34, 139, 34, 0.6);
+        padding: 3rem;
+        border-radius: 10px;
+    }
+
+    .section-title { font-size: 2.5rem; font-weight: bold; color: #ff4500; margin-bottom: 1.5rem; }
+
+    .card { border: none; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+    .card:hover { transform: scale(1.05); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-body { padding: 1.2rem; }
+    .card-title { font-size: 1.3rem; font-weight: bold; color: #333; }
+    .card-text { font-size: 1rem; color: #666; }
+
+    .footer { background-color: #f4e1c1; padding: 2rem 0; text-align: center; }
+    .footer a { color: #ff4500; text-decoration: none; margin: 0 1rem; font-size: 1.1rem; }
+    .footer a:hover { text-decoration: underline; }
+
+    html { scroll-behavior: smooth; }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html">DesiDwaar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
+            <li class="nav-item"><a class="nav-link" href="#culture">Culture & Food</a></li>
+            <li class="nav-item"><a class="nav-link" href="#travel-info">Travel Info</a></li>
+            <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
+            <li class="nav-item"><a class="btn btn-warning" href="#plan-trip">Plan Your Trip</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <video autoplay muted loop>
+        <source src="videos/arunachalpradesh.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay">
+        <div class="hero-text">
+            <h1>Arunachal Pradesh – The Land of Dawn-Lit Mountains</h1>
+            <p>Explore Tawang, Ziro, Itanagar, and Bomdila — a paradise of monasteries, valleys, and tribal culture.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Introduction -->
+<section class="container py-5">
+    <h2 class="section-title">Introduction</h2>
+    <p>Arunachal Pradesh, located in the northeastern tip of India, is known for its breathtaking landscapes, Buddhist monasteries, and rich tribal traditions. The state is blessed with snow-clad peaks, serene valleys, and colorful festivals that celebrate its cultural diversity. From the sacred town of Tawang to the lush valleys of Ziro, Arunachal is a hidden gem waiting to be explored.</p>
+</section>
+
+<!-- Top Attractions -->
+<section id="attractions" class="container py-5">
+    <h2 class="section-title">Top Attractions</h2>
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/TawangMonastery-ArunachalPradesh-1.jpg/1200px-TawangMonastery-ArunachalPradesh-1.jpg" alt="Tawang">
+                <div class="card-body"><h5 class="card-title">Tawang</h5><p class="card-text">Home to the famous Tawang Monastery, stunning lakes, and snow-capped mountains.</p></div></div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card"><img src="https://i0.wp.com/zikation.com/wp-content/uploads/2022/07/Ziro-Music-Festival-Venue.jpeg?fit=1280%2C793&ssl=1" alt="Ziro Valley">
+                <div class="card-body"><h5 class="card-title">Ziro Valley</h5><p class="card-text">UNESCO World Heritage site, known for Apatani culture and lush paddy fields.</p></div></div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card"><img src="https://propscience.s3.ap-south-1.amazonaws.com/backoffice_blogs/20250402042821_0_Arunachal_Pradesh__Itanagar_embraces_smart_growth_with_ropeway__e_buses__and_major_infra_upgrades.png" alt="Itanagar">
+                <div class="card-body"><h5 class="card-title">Itanagar</h5><p class="card-text">The capital city, featuring Ita Fort, Ganga Lake, and rich tribal culture.</p></div></div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card"><img src="https://vibrant.holiday/uploads/guide/images/15559218534.jpg" alt="Bomdila">
+                <div class="card-body"><h5 class="card-title">Bomdila</h5><p class="card-text">A serene hill town with a monastery, apple orchards, and panoramic Himalayan views.</p></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- Culture & Food -->
+<section id="culture" class="container py-5">
+    <h2 class="section-title">Culture & Food</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card"><img src="https://www.lchangnang.com/blog/wp-content/uploads/2023/11/Losar-Festival.webp" alt="Festivals">
+                <div class="card-body"><h5 class="card-title">Festivals</h5><p class="card-text">Colorful festivals like Losar and Ziro Festival of Music celebrate the state’s vibrant tribal culture.</p></div></div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card"><img src="https://foodblogindia.com/wp-content/uploads/2024/11/Bamboo-shoot-4.jpg" alt="Food">
+                <div class="card-body"><h5 class="card-title">Food</h5><p class="card-text">Relish local dishes like bamboo shoot curry, smoked meat, and Apong (traditional rice beer).</p></div></div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card"><img src="https://www.esamskriti.com/essays/images/dance6%20santhali.jpg" alt="Dance">
+                <div class="card-body"><h5 class="card-title">Dance & Music</h5><p class="card-text">Traditional tribal dances and folk songs reflect the harmony between people and nature.</p></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- Travel Info -->
+<section id="travel-info" class="container py-5">
+    <h2 class="section-title">Travel Information</h2>
+    <p><strong>Best Time to Visit:</strong> March to October for pleasant weather and festivals.</p>
+    <p><strong>How to Reach:</strong> By Air - Lilabari Airport (Assam) with connections to Arunachal; By Train - Naharlagun Railway Station; By Road - National Highways from Assam.</p>
+    <p><strong>Local Transport:</strong> Shared jeeps, buses, and cabs are the main modes of travel.</p>
+</section>
+
+<!-- Map -->
+<section id="map" class="container py-5">
+    <h2 class="section-title">Map</h2>
+    <div class="embed-responsive embed-responsive-16by9" style="height:400px;">
+        <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657086.365022084!2d91.24680804365627!3d27.73934588540742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x373f42c5bfe5b7a7%3A0x540d1f7f1baf07b1!2sArunachal%20Pradesh!5e0!3m2!1sen!2sin!4v1702561583745" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2025 DesiDwaar | <a href="#">Contact</a> | <a href="#">Other Destinations</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

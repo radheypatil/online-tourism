@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Dharamshala – Home to the Dalai Lama, Tibetan monasteries, and rich Himalayan culture.">
+  <title>Dharamshala – Spiritual & Cultural Retreat</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body { font-family: 'Arial', sans-serif; background-color: #ffffff; color: #333; }
+    .navbar { background: linear-gradient(to right, #654ea3, #eaafc8); }
+    .navbar-brand { font-size: 1.8rem; font-weight: bold; color: #fff; }
+    .navbar-nav .nav-link { color: #fff; font-size: 1.1rem; }
+    .navbar-nav .nav-link:hover { color: #ffd700; }
+
+    /* Hero Section */
+    .hero {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        overflow: hidden;
+    }
+    .hero video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        filter: brightness(65%);
+    }
+    .hero-overlay {
+        background-color: rgba(101, 78, 163, 0.6);
+        padding: 3rem;
+        border-radius: 10px;
+    }
+    .hero-overlay h1 { font-size: 3rem; font-weight: bold; }
+    .hero-overlay p { font-size: 1.2rem; margin-top: 1rem; }
+
+    .section-title { font-size: 2.2rem; font-weight: bold; color: #654ea3; margin-bottom: 1.5rem; }
+
+    .card { border: none; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+    .card:hover { transform: scale(1.05); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-body { padding: 1.2rem; }
+    .card-title { font-size: 1.3rem; font-weight: bold; color: #333; }
+    .card-text { font-size: 1rem; color: #555; }
+
+    .footer { background-color: #654ea3; padding: 2rem 0; text-align: center; color: white; }
+    .footer a { color: #f4e6ff; text-decoration: none; margin: 0 1rem; font-size: 1.1rem; }
+    .footer a:hover { text-decoration: underline; }
+
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="index.html">DesiDwaar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#travel-info">Travel Info</a></li>
+          <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
+      </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <video autoplay muted loop>
+      <source src="https://videos.pexels.com/video-files/857195/857195-hd_1280_720_25fps.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay">
+      <h1>Dharamshala – Spiritual & Cultural Retreat</h1>
+      <p>Home to the Dalai Lama, Tibetan monasteries, and a blend of Himalayan serenity.</p>
+  </div>
+</section>
+
+<!-- Introduction -->
+<section class="container py-5">
+  <h2 class="section-title">Introduction</h2>
+  <p>Dharamshala, nestled in the Kangra Valley of Himachal Pradesh, is a spiritual and cultural center known for its Tibetan influence and natural beauty. It is the residence of the Dalai Lama and the headquarters of the Tibetan government-in-exile. With monasteries, meditation centers, bustling Tibetan markets, and the scenic Dhauladhar mountains, Dharamshala is the perfect blend of peace, spirituality, and Himalayan charm.</p>
+</section>
+
+<!-- Attractions -->
+<section id="attractions" class="container py-5">
+  <h2 class="section-title">Top Attractions</h2>
+  <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.holidify.com/images/cmsuploads/compressed/tsuglagkhang-complex_20190212161222.jpg" alt="Tsuglagkhang Complex">
+          <div class="card-body">
+            <h5 class="card-title">Tsuglagkhang Complex</h5>
+            <p class="card-text">The residence of the Dalai Lama, featuring a monastery, temple, and museum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.holidify.com/images/cmsuploads/compressed/Bhagsunath_Temple_20180329170614.jpg" alt="Bhagsunath Temple">
+          <div class="card-body">
+            <h5 class="card-title">Bhagsunath Temple</h5>
+            <p class="card-text">An ancient temple with a nearby waterfall, popular among pilgrims and travelers.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.holidify.com/images/cmsuploads/compressed/Norbulingka-Institute_20180329171141.jpg" alt="Norbulingka Institute">
+          <div class="card-body">
+            <h5 class="card-title">Norbulingka Institute</h5>
+            <p class="card-text">A cultural center preserving Tibetan art, crafts, and traditions.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- Experiences -->
+<section id="experiences" class="container py-5">
+  <h2 class="section-title">Local Experiences</h2>
+  <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.holidify.com/images/cmsuploads/compressed/Trekking_20190710145338.jpg" alt="Triund Trek">
+          <div class="card-body">
+            <h5 class="card-title">Triund Trek</h5>
+            <p class="card-text">A popular trek offering panoramic views of the Dhauladhar range and Kangra Valley.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.holidify.com/images/cmsuploads/compressed/Tibetan_Market_20180329172411.jpg" alt="Tibetan Market">
+          <div class="card-body">
+            <h5 class="card-title">Tibetan Market</h5>
+            <p class="card-text">Shop for Tibetan handicrafts, jewelry, and prayer flags in vibrant markets.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.holidify.com/images/cmsuploads/compressed/Meditation_20180329172748.jpg" alt="Meditation Retreats">
+          <div class="card-body">
+            <h5 class="card-title">Meditation Retreats</h5>
+            <p class="card-text">Join yoga and meditation retreats for spiritual growth and inner peace.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- Travel Info -->
+<section id="travel-info" class="container py-5">
+  <h2 class="section-title">Travel Information</h2>
+  <p><strong>Best Time to Visit:</strong> March to June for pleasant weather; October to February for snow and winter charm.</p>
+  <p><strong>How to Reach:</strong> By Air - Gaggal Airport (13 km); By Train - Pathankot (85 km) is the nearest major railway station; By Road - Well-connected by buses from Delhi, Chandigarh, and Shimla.</p>
+  <p><strong>Local Transport:</strong> Taxis, shared cabs, and auto-rickshaws are common; walking is the best way to explore McLeod Ganj.</p>
+</section>
+
+<!-- Map -->
+<section id="map" class="container py-5">
+  <h2 class="section-title">Map</h2>
+  <div class="embed-responsive embed-responsive-16by9" style="height:400px;">
+      <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3433.4670982329473!2d76.32203757557894!3d32.21904297451592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b5603f2aa19f5%3A0x1a6b3bb8b6d4d98c!2sDharamshala%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1700007777777" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2025 DesiDwaar | <a href="index.html">Home</a> | <a href="#">Contact</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

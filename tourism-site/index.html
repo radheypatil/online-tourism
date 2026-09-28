@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Desidwar | Explore India</title>
+
+  <!-- Preconnects for performance -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Animate.css (light usage) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Your styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <meta name="description" content="Desidwar — Explore India's destinations, experiences, and travel info with a clean, fast, and mobile-friendly design." />
+  <meta name="keywords" content="India tourism, Desidwar, travel India, destinations, experiences, itinerary" />
+  <meta property="og:title" content="Desidwar | Explore India">
+  <meta property="og:description" content="Discover destinations, experiences, and plan your trip to India.">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <!-- Skip to content -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg py-2">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/2560px-Flag_of_India.svg.png" alt="India Flag" height="30" class="me-2">
+          <span class="brand-text fw-bold">DESIDWAR</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="mainNav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto main-nav">
+            <!-- Destinations (Fullscreen dropdown) -->
+            <li class="nav-item">
+              <button class="nav-link btn-as-link dropdown-trigger" data-target="#dropdown-destinations" aria-expanded="false" aria-controls="dropdown-destinations">
+                Destinations <i class="bi bi-chevron-down ms-1"></i>
+              </button>
+            </li>
+            <!-- Experiences (Fullscreen dropdown) -->
+            <li class="nav-item">
+              <button class="nav-link btn-as-link dropdown-trigger" data-target="#dropdown-experiences" aria-expanded="false" aria-controls="dropdown-experiences">
+                Experiences <i class="bi bi-chevron-down ms-1"></i>
+              </button>
+            </li>
+            <!-- Travel Info (Fullscreen dropdown) -->
+            <li class="nav-item">
+              <button class="nav-link btn-as-link dropdown-trigger" data-target="#dropdown-travelinfo" aria-expanded="false" aria-controls="dropdown-travelinfo">
+                Travel Info <i class="bi bi-chevron-down ms-1"></i>
+              </button>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#guides">Guides</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Fullscreen Dropdowns (click-to-open) -->
+  <div class="dropdown-backdrop" id="dropdownBackdrop" aria-hidden="true"></div>
+
+  <!-- Destinations Dropdown -->
+  <section class="fullscreen-dropdown" id="dropdown-destinations" aria-hidden="true">
+    <div class="container-fluid py-4">
+      <div class="dropdown-header container">
+        <h3 class="mb-0">Top Destinations</h3>
+        <button class="dropdown-close-btn" data-close="#dropdown-destinations" aria-label="Close Destinations menu">&times;</button>
+      </div>
+      <div class="container py-3">
+        <!-- Small thumbnail gallery (keep it small for now) -->
+        <div class="row g-3">
+          <!-- 8 sample destinations -->
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="rajasthan.html" class="thumb-card">
+              <img loading="lazy" src="images/rajasthan1.jpg" alt="Rajasthan">
+              <span>Rajasthan</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="kerala.html" class="thumb-card">
+              <img loading="lazy" src="images/kerala1.jpg" alt="Kerala">
+              <span>Kerala</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="goa.html" class="thumb-card">
+              <img loading="lazy" src="images/goa.jpg" alt="Goa">
+              <span>Goa</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="himachalpradesh.html" class="thumb-card">
+              <img loading="lazy" src="images/himachalpradesh.jpg" alt="Himachal Pradesh">
+              <span>Himachal Pradesh</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="andhrapradesh.html" class="thumb-card">
+              <img loading="lazy" src="images/andhrapradesh.jpg" alt="Andhra Pradesh">
+              <span>Andhra Pradesh</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="arunachalpradesh.html" class="thumb-card">
+              <img loading="lazy" src="images/Arunachal_Pradesh.jpg" alt="Arunachal Pradesh">
+              <span>Arunachal Pradesh</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="assam.html" class="thumb-card">
+              <img loading="lazy" src="images/Assam.jpg" alt="Assam">
+              <span>Assam</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="bihar.html" class="thumb-card">
+              <img loading="lazy" src="images/bihar.jpg" alt="Bihar">
+              <span>Bihar</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="chhattisgarh.html" class="thumb-card">
+              <img loading="lazy" src="images/chhattisgarh.jpg" alt="Chhattisgarh">
+              <span>Chhattisgarh</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="gujarat.html" class="thumb-card">
+              <img loading="lazy" src="images/gujarat.jpg" alt="Gujarat">
+              <span>Gujarat</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="haryana.html" class="thumb-card">
+              <img loading="lazy" src="images/haryana.jpg" alt="Haryana">
+              <span>Haryana</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="jharkhand.html" class="thumb-card">
+              <img loading="lazy" src="images/jharkhand.jpg" alt="Jharkhand">
+              <span>Jharkhand</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="karnataka.html" class="thumb-card">
+              <img loading="lazy" src="images/karnataka.jpg" alt="Karnataka">
+              <span>Karnataka</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="mp.html" class="thumb-card">
+              <img loading="lazy" src="images/madhyapradesh.jpg" alt="Madhya Pradesh">
+              <span>Madhya Pradesh</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="maharashtra.html" class="thumb-card">
+              <img loading="lazy" src="images/maharashtra.jpg" alt="Maharashtra">
+              <span>Maharashtra</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="manipur.html" class="thumb-card">
+              <img loading="lazy" src="images/manipur.jpg" alt="Manipur">
+              <span>Manipur</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="meghalaya.html" class="thumb-card">
+              <img loading="lazy" src="images/meghalaya.jpg" alt="Meghalaya">
+              <span>Meghalaya</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="mizoram.html" class="thumb-card">
+              <img loading="lazy" src="images/Mizoram.jpg" alt="Mizoram">
+              <span>Mizoram</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="nagaland.html" class="thumb-card">
+              <img loading="lazy" src="images/nagaland.jpg" alt="Nagaland">
+              <span>Nagaland</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="odisha.html" class="thumb-card">
+              <img loading="lazy" src="images/odisha.jpg" alt="Odisha">
+              <span>Odisha</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="panjab.html" class="thumb-card">
+              <img loading="lazy" src="images/Punjab.jpg" alt="Punjab">
+              <span>Punjab</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="sikkim.html" class="thumb-card">
+              <img loading="lazy" src="images/sikkim.jpg" alt="Sikkim">
+              <span>Sikkim</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="tamilnadu.html" class="thumb-card">
+              <img loading="lazy" src="images/tamilnadu.jpg" alt="Tamil Nadu">
+              <span>Tamil Nadu</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="telangana.html" class="thumb-card">
+              <img loading="lazy" src="images/telangana.jpg" alt="Telangana">
+              <span>Telangana</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="tripura.html" class="thumb-card">
+              <img loading="lazy" src="images/tripura.jpg" alt="Tripura">
+              <span>Tripura</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="uttarakhand.html" class="thumb-card">
+              <img loading="lazy" src="images/uttarakhand.jpg" alt="Uttarakhand">
+              <span>Uttarakhand</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="westbengal.html" class="thumb-card">
+              <img loading="lazy" src="images/westbengal.jpg" alt="West Bengal">
+              <span>West Bengal</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="andaman.html" class="thumb-card">
+              <img loading="lazy" src="images/andaman.jpg" alt="Andaman and Nicobar Islands">
+              <span>Andaman and Nicobar Islands</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="chandigarh.html" class="thumb-card">
+              <img loading="lazy" src="images/chandigarh.jpg" alt="Chandigarh">
+              <span>Chandigarh</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="daman.html" class="thumb-card">
+              <img loading="lazy" src="images/daman.jpg" alt="Daman and Diu">
+              <span>Daman and Diu</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="delhi.html" class="thumb-card">
+              <img loading="lazy" src="images/delhi.jpg" alt="Delhi">
+              <span>Delhi</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="jammu.html" class="thumb-card">
+              <img loading="lazy" src="images/jammu.jpg" alt="Jammu and Kashmir">
+              <span>Jammu and Kashmir</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="ladakh.html" class="thumb-card">
+              <img loading="lazy" src="images/ladakh.jpg" alt="Ladakh">
+              <span>Ladakh</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="lakshadweep.html" class="thumb-card">
+              <img loading="lazy" src="images/lakshadweep.jpg" alt="Lakshadweep">
+              <span>Lakshadweep</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="puducherry.html" class="thumb-card">
+              <img loading="lazy" src="images/puducherry.jpg" alt="Puducherry">
+              <span>Puducherry</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiences Dropdown -->
+  <section class="fullscreen-dropdown" id="dropdown-experiences" aria-hidden="true">
+    <div class="container-fluid py-4">
+      <div class="dropdown-header container">
+        <h3 class="mb-0">Experiences</h3>
+        <button class="dropdown-close-btn" data-close="#dropdown-experiences" aria-label="Close Experiences menu">&times;</button>
+      </div>
+      <div class="container py-3">
+        <div class="row g-3">
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="heritage.html" class="thumb-card">
+              <img loading="lazy" src="images/heritage.jpg" alt="Heritage">
+              <span>Heritage & Culture</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="adventure.html" class="thumb-card">
+              <img loading="lazy" src="images/adventure.jpg" alt="Adventure">
+              <span>Adventure</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="wellness.html" class="thumb-card">
+              <img loading="lazy" src="images/yoga1.jpg" alt="Wellness">
+              <span>Wellness & Yoga</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="#" class="thumb-card">
+              <img loading="lazy" src="images/wildlife.jpg" alt="Wildlife">
+              <span>Wildlife</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Travel Info Dropdown -->
+  <section class="fullscreen-dropdown" id="dropdown-travelinfo" aria-hidden="true">
+    <div class="container-fluid py-4">
+      <div class="dropdown-header container">
+        <h3 class="mb-0">Travel Information</h3>
+        <button class="dropdown-close-btn" data-close="#dropdown-travelinfo" aria-label="Close Travel Info menu">&times;</button>
+      </div>
+      <div class="container py-3">
+        <div class="row g-3">
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="#" class="thumb-card">
+              <img loading="lazy" src="images/travel.jpg" alt="Trains">
+              <span>Getting Around (Rail/Flight/Road)</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="#" class="thumb-card">
+              <img loading="lazy" src="images/currency.jpg" alt="Currency">
+              <span>Currency & Payments</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="#" class="thumb-card">
+              <img loading="lazy" src="images/safety.jpg" alt="Safety">
+              <span>Safety Tips</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero -->
+  <section class="hero" id="main-content" aria-label="Hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1 class="display-5 fw-bold" style="color: #ccb11b;">Discover Incredible India</h1>
+      <p class="lead mb-4">From Himalayan peaks to tropical beaches — culture, cuisine, and colors await.</p>
+      <div class="d-flex flex-wrap gap-2">
+        <a href="#destinations" class="btn btn-cta">Explore Destinations</a>
+        <a href="#experiences" class="btn btn-ghost">View Experiences</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Top Destinations -->
+  <section class="container section-spacing" id="destinations">
+    <div class="section-title text-center">
+      <h2>Top Destinations</h2>
+      <p class="text-muted">Handpicked places to kickstart your journey</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="card place-card h-100">
+          <img loading="lazy" src="images/rajasthan.jpg" class="card-img-top" alt="Rajasthan">
+          <div class="card-body">
+            <h5 class="card-title">Rajasthan</h5>
+            <p class="card-text small text-muted">Forts, palaces, and desert landscapes.</p>
+          </div>
+          <div class="card-footer bg-transparent">
+            <a href="rajasthan.html" class="btn btn-outline-primary btn-sm">Explore →</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card place-card h-100">
+          <img loading="lazy" src="images/kerala.jpg" class="card-img-top" alt="Kerala">
+          <div class="card-body">
+            <h5 class="card-title">Kerala</h5>
+            <p class="card-text small text-muted">Backwaters, tea gardens & Ayurveda.</p>
+          </div>
+          <div class="card-footer bg-transparent">
+            <a href="kerala.html" class="btn btn-outline-primary btn-sm">Explore →</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card place-card h-100">
+          <img loading="lazy" src="images/goa.jpg" class="card-img-top" alt="Goa">
+          <div class="card-body">
+            <h5 class="card-title">Goa</h5>
+            <p class="card-text small text-muted">Sun-kissed beaches & old-world charm.</p>
+          </div>
+          <div class="card-footer bg-transparent">
+            <a href="goa.html" class="btn btn-outline-primary btn-sm">Explore →</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card place-card h-100">
+          <img loading="lazy" src="images/himachalpradesh.jpg" class="card-img-top" alt="Himachal Pradesh">
+          <div class="card-body">
+            <h5 class="card-title">Himachal Pradesh</h5>
+            <p class="card-text small text-muted">Mountain escapes in Shimla & Manali.</p>
+          </div>
+          <div class="card-footer bg-transparent">
+            <a href="himachalpradesh.html" class="btn btn-outline-primary btn-sm">Explore →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Smart Travel Tools (NEW FEATURE) -->
+<section class="container section-spacing" id="smart-tools">
+  <div class="section-title text-center">
+    <h2>Smart Travel Planner</h2>
+    <p class="text-muted">Get personalized recommendations & estimate your trip cost</p>
+  </div>
+
+  <div class="row g-4">
+
+    <!-- AI Recommendation -->
+    <div class="col-md-6">
+      <div class="card p-4 h-100">
+        <h4 class="mb-3">Travel Recommendation</h4>
+
+        <label class="form-label">Select Budget</label>
+        <select id="budget" class="form-select mb-3">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+
+        <label class="form-label">Travel Type</label>
+        <select id="type" class="form-select mb-3">
+          <option value="adventure">Adventure</option>
+          <option value="spiritual">Spiritual</option>
+          <option value="relax">Relaxation</option>
+        </select>
+
+        <button class="btn btn-primary" onclick="getRecommendation()">Get Recommendation</button>
+
+        <p class="mt-3 fw-bold" id="result"></p>
+      </div>
+    </div>
+
+<!-- Budget Estimator -->
+<div class="col-md-6">
+  <div class="card p-4 h-100 shadow-sm">
+    <h4 class="mb-3">Trip Budget Estimator</h4>
+
+    <!-- Days -->
+    <label class="form-label">Number of Days</label>
+    <input type="number" id="days" class="form-control mb-3" placeholder="Enter number of days">
+
+    <!-- Hotel -->
+    <label class="form-label">Hotel Type</label>
+    <select id="hotel" class="form-select mb-3">
+      <option value="1000">Budget (₹1000/day)</option>
+      <option value="3000">Standard (₹3000/day)</option>
+      <option value="6000">Luxury (₹6000/day)</option>
+    </select>
+
+    <!-- Button -->
+    <button class="btn btn-success w-100" onclick="calculateBudget()">
+      Estimate Cost
+    </button>
+
+    <!-- Result Card -->
+    <div id="costResult" class="mt-4 p-3 border rounded bg-light" style="display:none;">
+      
+      <h5 class="mb-3">Trip Cost Breakdown</h5>
+      <hr>
+
+      <p class="mb-1"><strong>Duration:</strong> <span id="resDays"></span></p>
+      <p class="mb-2"><strong>Hotel Type:</strong> <span id="resHotel"></span></p>
+
+      <hr>
+
+      <p class="mb-1">🏨 Accommodation: ₹<span id="resStay"></span></p>
+      <p class="mb-1">🍽️ Food: ₹<span id="resFood"></span></p>
+      <p class="mb-1">🚕 Local Transport: ₹<span id="resTransport"></span></p>
+
+      <hr>
+
+      <h6 class="text-success">Total Trip Cost: ₹<span id="resTotal"></span></h6>
+
+    </div>
+  </div>
+</div>
+
+  </div>
+</section>
+
+  <!-- Experiences -->
+  <section class="bg-light py-5" id="experiences">
+    <div class="container section-spacing">
+      <div class="section-title text-center">
+        <h2>Must-Do Experiences</h2>
+        <p class="text-muted">Signature Indian moments you shouldn't miss</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card exp-card h-100">
+            <div class="position-relative">
+              <img loading="lazy" src="images/taj.jpg" class="card-img-top" alt="Taj Mahal at Sunrise">
+              <span class="card-tag">Heritage</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Taj Mahal at Sunrise</h5>
+              <p class="card-text small text-muted">Watch the marble glow in the first light — a bucket-list moment.</p>
+            </div>
+            <div class="card-footer bg-transparent">
+              <a href="tajmahal.html" class="btn btn-outline-primary btn-sm">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card exp-card h-100">
+            <div class="position-relative">
+              <img loading="lazy" src="images/yoga.jpg" class="card-img-top" alt="Yoga by the Ganges">
+              <span class="card-tag">Wellness</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Yoga by the Ganges</h5>
+              <p class="card-text small text-muted">Recenter in Rishikesh — the world’s yoga capital.</p>
+            </div>
+            <div class="card-footer bg-transparent">
+              <a href="yoga.html" class="btn btn-outline-primary btn-sm">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card exp-card h-100">
+            <div class="position-relative">
+              <img loading="lazy" src="images/tiger.jpg" class="card-img-top" alt="Tiger Safari">
+              <span class="card-tag">Wildlife</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tiger Safari</h5>
+              <p class="card-text small text-muted">Track the Bengal tiger in Ranthambore National Park.</p>
+            </div>
+            <div class="card-footer bg-transparent">
+              <a href="tiger.html" class="btn btn-outline-primary btn-sm">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="#guides" class="btn btn-ghost">View All Experiences</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Essential Travel Info (includes Weather widget) -->
+  <section class="container section-spacing" id="travel-info">
+    <div class="section-title text-center">
+      <h2>Essential Travel Information</h2>
+      <p class="text-muted">Plan smart — visas, transport, weather & safety</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card info-card h-100">
+          <div class="card-body">
+            <h4 class="h5 mb-3 text-success">Visa Requirements</h4>
+            <ul class="small text-muted ps-3">
+              <li>e-Visa available for many nationalities</li>
+              <li>Processing ~ 3–5 business days</li>
+              <li>Validity options: 30 days to 1 year</li>
+            </ul>
+            <a href="#" class="btn btn-outline-success btn-sm">Apply for e-Visa</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <!-- Weather Widget (populated by script.js) -->
+        <div class="weather-widget text-center p-4 h-100">
+          <div class="weather-icon mb-2"><i class="bi bi-cloud-sun"></i></div>
+          <div class="weather-temp fw-bold">--°C</div>
+          <div class="weather-location small">Detecting location…</div>
+          <div class="weather-desc small text-white-50">—</div>
+          <div class="mt-3">
+            <small class="opacity-75">Live weather via OpenWeatherMap</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card info-card h-100">
+          <div class="card-body">
+            <h4 class="h5 mb-3"><i class="bi bi-train-front me-2"></i>Getting Around</h4>
+            <p class="small text-muted mb-2"><strong>Rail:</strong> Extensive network; book in advance for long routes.</p>
+            <p class="small text-muted mb-2"><strong>Flights:</strong> Fast between metros and key tourist hubs.</p>
+            <p class="small text-muted"><strong>Road:</strong> Buses & taxis for intra-state and last-mile travel.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guides / Blog -->
+  <section class="bg-light py-5" id="guides">
+    <div class="container section-spacing">
+      <div class="section-title text-center">
+        <h2>Travel Guides & Itineraries</h2>
+        <p class="text-muted">Quick reads to help you plan better</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card blog-card h-100">
+            <img loading="lazy" src="images/Amritsar_g.jpg" class="card-img-top" alt="Amritsar Guide">
+            <div class="card-body">
+              <div class="d-flex justify-content-between small text-muted mb-2">
+                <span><i class="bi bi-clock"></i> 5 min</span>
+                <span><i class="bi bi-calendar"></i> Mar 15, 2023</span>
+              </div>
+              <h5 class="card-title">3 Days in Amritsar: The Golden Temple & Beyond</h5>
+              <p class="card-text small text-muted">A compact itinerary covering the Golden Temple, Wagah Border, and local eats.</p>
+              <a href="amritsar3day.html" class="btn btn-outline-primary btn-sm">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card blog-card h-100">
+            <img loading="lazy" src="images/himalayas.jpg" class="card-img-top" alt="Himalayas Trekking">
+            <div class="card-body">
+              <div class="d-flex justify-content-between small text-muted mb-2">
+                <span><i class="bi bi-clock"></i> 8 min</span>
+                <span><i class="bi bi-calendar"></i> Feb 28, 2023</span>
+              </div>
+              <h5 class="card-title">Trekking in the Indian Himalayas: A Beginner’s Guide</h5>
+              <p class="card-text small text-muted">Best seasons, key trails, and what to pack for your first trek.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card blog-card h-100">
+            <img loading="lazy" src="images/diwali.jpg" class="card-img-top" alt="Indian Festivals">
+            <div class="card-body">
+              <div class="d-flex justify-content-between small text-muted mb-2">
+                <span><i class="bi bi-clock"></i> 6 min</span>
+                <span><i class="bi bi-calendar"></i> Jan 10, 2023</span>
+              </div>
+              <h5 class="card-title">Festivals of India: When & Where to Experience Them</h5>
+              <p class="card-text small text-muted">From Holi to Diwali — plan your trip around India’s biggest festivals.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="#" class="btn btn-cta">View All Guides</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter text-white">
+    <div class="container py-4">
+      <div class="row align-items-center g-3">
+        <div class="col-lg-6">
+          <h3 class="mb-1">Get Indian travel updates</h3>
+          <p class="mb-0 opacity-75">Inspiration, tips, and deals — straight to your inbox.</p>
+        </div>
+        <div class="col-lg-6">
+          <form class="row g-2" id="newsletterForm">
+            <div class="col-8">
+              <label class="visually-hidden" for="newsletterEmail">Email</label>
+              <input type="email" id="newsletterEmail" class="form-control" placeholder="Your email address" required>
+            </div>
+            <div class="col-4">
+              <button class="btn btn-light w-100" type="submit">Subscribe</button>
+            </div>
+          </form>
+          <div class="small mt-2" id="newsletterMsg" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-main">
+    <div class="container py-5">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <h5>About Desidwar</h5>
+          <p class="text-muted small">Your friendly guide to India’s destinations, experiences, and travel essentials — fast, modern, and mobile-first.</p>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h5>Destinations</h5>
+          <ul class="list-unstyled small footer-links">
+            <li><a href="#">North India</a></li>
+            <li><a href="#">South India</a></li>
+            <li><a href="#">East India</a></li>
+            <li><a href="#">West India</a></li>
+            <li><a href="#">Himalayan Region</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h5>Travel Info</h5>
+          <ul class="list-unstyled small footer-links">
+            <li><a href="#">Visa Requirements</a></li>
+            <li><a href="#">Getting Around</a></li>
+            <li><a href="#">Safety Tips</a></li>
+            <li><a href="#">Weather Guide</a></li>
+            <li><a href="#">Cultural Etiquette</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h5>Connect</h5>
+          <div class="social-links mb-3">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+          </div>
+          <div class="small text-muted">© <span id="yearNow"></span> Desidwar. All rights reserved.</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

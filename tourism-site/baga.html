@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Baga Beach – Goa’s nightlife hotspot, famous for clubs, shacks, and water adventures.">
+  <title>Baga – Nightlife & Adventure Hub</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body { font-family: 'Arial', sans-serif; background-color: #ffffff; color: #333; }
+    .navbar { background: linear-gradient(to right, #ff512f, #dd2476); }
+    .navbar-brand { font-size: 1.8rem; font-weight: bold; color: #fff; }
+    .navbar-nav .nav-link { color: #fff; font-size: 1.1rem; }
+    .navbar-nav .nav-link:hover { color: #ffd700; }
+
+    /* Hero Section */
+    .hero {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+    .hero video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        filter: brightness(65%);
+    }
+    .hero-overlay {
+        background-color: rgba(221, 36, 118, 0.6);
+        padding: 3rem;
+        border-radius: 10px;
+    }
+    .hero-overlay h1 { font-size: 3rem; font-weight: bold; }
+    .hero-overlay p { font-size: 1.2rem; margin-top: 1rem; }
+
+    .section-title { font-size: 2.2rem; font-weight: bold; color: #dd2476; margin-bottom: 1.5rem; }
+
+    .card { border: none; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+    .card:hover { transform: scale(1.05); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-body { padding: 1.2rem; }
+    .card-title { font-size: 1.3rem; font-weight: bold; color: #333; }
+    .card-text { font-size: 1rem; color: #555; }
+
+    .footer { background-color: #dd2476; padding: 2rem 0; text-align: center; color: white; }
+    .footer a { color: #ffe4e1; text-decoration: none; margin: 0 1rem; font-size: 1.1rem; }
+    .footer a:hover { text-decoration: underline; }
+
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="index.html">DesiDwaar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#travel-info">Travel Info</a></li>
+          <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
+      </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <video autoplay muted loop>
+      <source src="https://videos.pexels.com/video-files/1841874/1841874-uhd_2560_1440_25fps.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay">
+      <h1>Baga – Nightlife & Adventure Hub</h1>
+      <p>Goa’s most happening beach, buzzing with shacks, clubs, and water adventures.</p>
+  </div>
+</section>
+
+<!-- Introduction -->
+<section class="container py-5">
+  <h2 class="section-title">Introduction</h2>
+  <p>Baga Beach in North Goa is the party capital of India. Famous for its energetic nightlife, legendary clubs like Tito’s and Mambo’s, and vibrant beach shacks, it’s the go-to destination for those who love music, dance, and endless fun. By day, enjoy thrilling water sports, and by night, the beach transforms into a carnival of lights and beats.</p>
+</section>
+
+<!-- Attractions -->
+<section id="attractions" class="container py-5">
+  <h2 class="section-title">Top Attractions</h2>
+  <div class="row">
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://www.holidify.com/images/cmsuploads/compressed/Baga_20180323130059.jpg" alt="Baga Beach"><div class="card-body"><h5 class="card-title">Baga Beach</h5><p class="card-text">The heart of Goa’s nightlife and water sports.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://images.indianexpress.com/2019/12/titos-goa-759.jpg" alt="Tito’s Club"><div class="card-body"><h5 class="card-title">Tito’s Club</h5><p class="card-text">One of Goa’s most iconic clubs, perfect for dancing the night away.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://www.holidify.com/images/cmsuploads/compressed/Mambos_Night_Club_Goa_20190718142918.jpg" alt="Mambo’s"><div class="card-body"><h5 class="card-title">Mambo’s</h5><p class="card-text">A hotspot for live music, DJs, and all-night parties.</p></div></div></div>
+  </div>
+</section>
+
+<!-- Experiences -->
+<section id="experiences" class="container py-5">
+  <h2 class="section-title">Local Experiences</h2>
+  <div class="row">
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://www.goaexperience.co.uk/media/3520/parasailing-goa-experience.jpg" alt="Water Sports"><div class="card-body"><h5 class="card-title">Water Sports</h5><p class="card-text">Try parasailing, jet skiing, and bumper rides for adrenaline rush.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://media-cdn.tripadvisor.com/media/photo-s/07/8d/9f/ef/calangute.jpg" alt="Beach Shacks"><div class="card-body"><h5 class="card-title">Beach Shacks</h5><p class="card-text">Lively shacks serving seafood, cocktails, and live music.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/sites/2/2017/05/29173241/FleaMarkets1.jpg" alt="Shopping"><div class="card-body"><h5 class="card-title">Flea Market</h5><p class="card-text">Shop for souvenirs, beachwear, and handicrafts at nearby flea markets.</p></div></div></div>
+  </div>
+</section>
+
+<!-- Travel Info -->
+<section id="travel-info" class="container py-5">
+  <h2 class="section-title">Travel Information</h2>
+  <p><strong>Best Time to Visit:</strong> November to March for perfect beach weather and parties.</p>
+  <p><strong>How to Reach:</strong> By Air - Dabolim Airport (40 km); By Train - Thivim Station (20 km); By Road - Well-connected by buses and taxis.</p>
+  <p><strong>Local Transport:</strong> Rent a bike or scooter for easy exploration, taxis and rickshaws also available.</p>
+</section>
+
+<!-- Map -->
+<section id="map" class="container py-5">
+  <h2 class="section-title">Map</h2>
+  <div class="embed-responsive embed-responsive-16by9" style="height:400px;">
+      <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3897.7363682623334!2d73.74019317546988!3d15.552231385064142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfea12adf4ea9d%3A0x9c8658bc3eb2a48d!2sBaga%20Beach!5e0!3m2!1sen!2sin!4v1700002222222" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2025 DesiDwaar | <a href="index.html">Home</a> | <a href="#">Contact</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heritage & Culture | DesiDwaar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fdfdfd;
+      color: #333;
+    }
+
+    /* Navbar */
+    nav {
+      background: rgba(10,42,67,0.9);
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 40px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    nav .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 12px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #f4a261;
+    }
+
+    /* Hero Section (Full Page) */
+    .hero {
+      position: relative;
+      background: url('https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2025/06/23181924/Khajuraho-FI.jpg?tr=w-1200,q-60') center/cover no-repeat;
+      height: 100vh; /* Full screen */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero h1 {
+      font-size: 4rem;
+      z-index: 1;
+      animation: fadeDown 2s ease;
+    }
+    @keyframes fadeDown {
+      from {opacity: 0; transform: translateY(-50px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* Container */
+    .container {
+      padding: 80px 10%;
+    }
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #0a2a43;
+      position: relative;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 1s ease;
+    }
+    .section-title.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .section-title::after {
+      content: "";
+      width: 60px;
+      height: 3px;
+      background: #f4a261;
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+    }
+    p {
+      line-height: 1.7;
+      margin-bottom: 20px;
+      font-size: 1.05rem;
+    }
+
+    /* Quote Section */
+    .quote-section {
+      background: url('https://cdn.britannica.com/86/170586-050-AB7FEFAE/Taj-Mahal-Agra-India.jpg') center/cover fixed no-repeat;
+      padding: 100px 20px;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+    .quote-section::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.6);
+    }
+    .quote-section h2 {
+      position: relative;
+      font-size: 2rem;
+      font-style: italic;
+      max-width: 800px;
+      margin: 0 auto;
+      z-index: 1;
+    }
+
+    /* Card Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .card {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      cursor: pointer;
+      transform: translateY(30px);
+      opacity: 0;
+      transition: all 0.8s ease;
+      background: #fff;
+    }
+    .card.active {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    .card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .card:hover img {
+      transform: scale(1.1);
+    }
+    .card h3 {
+      margin: 15px;
+      font-size: 1.3rem;
+      color: #0a2a43;
+    }
+    .card p {
+      margin: 0 15px 20px 15px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      background: #0a2a43;
+      color: #ddd;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* Fix nav overlapping hero */
+    .spacer {
+      height: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">DESIDWAAR</div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="experiences.html">Experiences</a>
+      <a href="travel-info.html">Travel Info</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Heritage & Culture of India</h1>
+  </section>
+
+  <!-- Spacer -->
+  <div class="spacer"></div>
+
+  <!-- Intro -->
+  <section class="container">
+    <h2 class="section-title">Discover Timeless Heritage</h2>
+    <p>
+      India is a land of ancient traditions, magnificent monuments, and vibrant cultures.
+      From grand palaces to spiritual temples, every corner of the country reflects a story of its glorious past.
+      Explore centuries-old forts, UNESCO heritage sites, and immerse yourself in festivals that celebrate India’s diversity.
+    </p>
+    <p>
+      Beyond the monuments, India’s culture is also alive in its performing arts, classical music, dance, crafts, and culinary traditions.
+      Each state narrates its own tale of heritage — from the carvings of Khajuraho and temples of Odisha to the palaces of Rajasthan and ghats of Varanasi.
+      The journey is not just about sights, but also about experiences that connect you to the soul of India.
+    </p>
+  </section>
+
+  <!-- Quote Section -->
+  <section class="quote-section">
+    <h2>"A nation's culture resides in the hearts and in the soul of its people." – Mahatma Gandhi</h2>
+  </section>
+
+  <!-- Highlights -->
+  <section class="container">
+    <h2 class="section-title">Top Heritage & Cultural Destinations</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://cdn.britannica.com/86/170586-050-AB7FEFAE/Taj-Mahal-Agra-India.jpg" alt="Taj Mahal">
+        <h3>Taj Mahal, Agra</h3>
+        <p>A symbol of eternal love, this marble masterpiece of Mughal architecture is one of the New Seven Wonders of the World.</p>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfoOKeyTDJwewDtUxWxrQjl3XwBMDrNR0CzQ&s" alt="Hampi">
+        <h3>Hampi, Karnataka</h3>
+        <p>Once the capital of the Vijayanagara Empire, Hampi is famed for its stone temples, royal enclosures, and ancient bazaars.</p>
+      </div>
+      <div class="card">
+        <img src="https://s7ap1.scene7.com/is/image/incredibleindia/amber-fort-jaipur-rajasthan-1-attr-hero?qlt=82&ts=1742157903972" alt="Jaipur">
+        <h3>Amber Fort, Jaipur</h3>
+        <p>An opulent fortress blending Hindu and Mughal styles, Amber Fort is known for its ornate palaces and stunning hilltop views.</p>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6G0f46u1UVtseDlN9FQVYHjLbzw3rYdSXPA&s" alt="Konark Sun Temple">
+        <h3>Konark Sun Temple, Odisha</h3>
+        <p>A UNESCO World Heritage Site, the 13th-century temple is designed as a colossal chariot dedicated to the Sun God.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Outro -->
+  <section class="container">
+    <h2 class="section-title">Why Explore India’s Heritage?</h2>
+    <p>
+      India’s heritage is more than its monuments — it is a living tradition that continues to thrive in art, rituals, and everyday life.
+      Whether it’s witnessing classical dance in Tamil Nadu, exploring the stepwells of Gujarat, or tasting royal cuisines of Lucknow,
+      every experience is a bridge between the past and the present.
+    </p>
+    <p>
+      Travel through India’s cultural corridors and you will not only witness history but also become part of a timeless legacy.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 DesiDwaar. All rights reserved. | Celebrating India’s Heritage</p>
+  </footer>
+
+  <!-- JS for Scroll Animation -->
+  <script>
+    const sections = document.querySelectorAll('.section-title, .card');
+    const revealOnScroll = () => {
+      sections.forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) {
+          sec.classList.add('active');
+        }
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+  </script>
+
+</body>
+</html>

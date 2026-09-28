@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yoga & Meditation | DesiDwaar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fdfdfd;
+      color: #333;
+    }
+
+    /* Navbar */
+    nav {
+      background: rgba(10,42,67,0.9);
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 40px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    nav .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 12px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #f4a261;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      background: url('https://media.istockphoto.com/id/2164400085/photo/young-woman-practicing-yoga-in-the-nature-female-happiness-landscape-background.jpg?s=612x612&w=0&k=20&c=7nSfwAgPxpa4Q4Np-LjGRslGLCBwpCfQKCEf11w1TTA=') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero h1 {
+      font-size: 4rem;
+      z-index: 1;
+      animation: fadeDown 2s ease;
+      position: relative;
+    }
+    @keyframes fadeDown {
+      from {opacity: 0; transform: translateY(-50px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* Container */
+    .container {
+      padding: 80px 10%;
+    }
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #0a2a43;
+      position: relative;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 1s ease;
+    }
+    .section-title.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .section-title::after {
+      content: "";
+      width: 60px;
+      height: 3px;
+      background: #f4a261;
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+    }
+    p {
+      line-height: 1.7;
+      margin-bottom: 20px;
+      font-size: 1.05rem;
+    }
+
+    /* Card Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .card {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      cursor: pointer;
+      transform: translateY(30px);
+      opacity: 0;
+      transition: all 0.8s ease;
+    }
+    .card.active {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    .card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .card:hover img {
+      transform: scale(1.1);
+    }
+    .card h3 {
+      position: absolute;
+      bottom: 10px;
+      left: 15px;
+      color: #fff;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.7);
+      font-size: 1.3rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #0a2a43;
+      color: #ddd;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* Fix nav overlapping hero */
+    .spacer {
+      height: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">DESIDWAAR</div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="experiences.html">Experiences</a>
+      <a href="travel-info.html">Travel Info</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Yoga & Meditation Retreats of India</h1>
+  </section>
+
+  <!-- Spacer -->
+  <div class="spacer"></div>
+
+  <!-- Intro -->
+  <section class="container">
+    <h2 class="section-title">Find Your Inner Peace</h2>
+    <p>
+      India is the ultimate destination for yoga and meditation enthusiasts. 
+      From the sacred banks of the Ganges in Rishikesh to serene backwaters in Kerala, 
+      explore retreats and ashrams that nurture the mind, body, and soul. 
+      Rejuvenate through traditional practices, healing therapies, and immersive experiences 
+      amidst nature’s tranquility.
+    </p>
+  </section>
+
+  <!-- Yoga Destinations -->
+  <section class="container">
+    <h2 class="section-title">Top Yoga & Meditation Destinations</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://maharishiyogapeeth.com/blog/wp-content/uploads/2024/05/yoga-capital-of-the-world.jpg" alt="Rishikesh">
+        <h3>Rishikesh (Yoga Capital of the World)</h3>
+      </div>
+      <div class="card">
+        <img src="https://bookretreats.com/blog/wp-content/uploads/2019/11/kerala-ayurvedic-retreat-1024x681.jpg" alt="Kerala">
+        <h3>Kerala (Ayurveda & Backwaters Retreats)</h3>
+      </div>
+      <div class="card">
+        <img src="https://bookretreats.com/cdn-cgi/image/width=1200,quality=65,f=auto,sharpen=1,fit=cover,gravity=auto/assets/photo/retreat/0m/50k/50440/p_1855127/1000_1738549079.jpg" alt="Dharamshala">
+        <h3>Dharamshala (Meditation & Tibetan Healing)</h3>
+      </div>
+      <div class="card">
+        <img src="https://images.squarespace-cdn.com/content/v1/601cf6a4fabc2a27672c7e92/1621426446469-7EQD5GB5Q2HTZ8FEPA6L/ubuntu-bali-eco-yoga-retreat-mysore-ashtanga-sm.jpg" alt="Mysore">
+        <h3>Mysore (Traditional Ashtanga Yoga)</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 DesiDwaar. All rights reserved.</p>
+  </footer>
+
+  <!-- JS Scroll Animation -->
+  <script>
+    const sections = document.querySelectorAll('.section-title, .card');
+    const revealOnScroll = () => {
+      sections.forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) {
+          sec.classList.add('active');
+        }
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore Thiruvananthapuram, Kerala’s capital city, famous for Padmanabhaswamy Temple, beaches, museums, and cultural heritage.">
+<title>Thiruvananthapuram – Kerala’s Capital City</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    body { font-family: 'Arial', sans-serif; background-color: #ffffff; color: #333; }
+    .navbar { background: linear-gradient(to right, #34495e, #2c3e50); }
+    .navbar-brand { font-size: 1.8rem; font-weight: bold; color: #fff; }
+    .navbar-nav .nav-link { color: #fff; font-size: 1.1rem; }
+    .navbar-nav .nav-link:hover { color: #f1c40f; }
+
+    /* Hero Section */
+    .hero {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+    .hero video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        filter: brightness(70%);
+    }
+    .hero-overlay {
+        background-color: rgba(52, 73, 94, 0.6);
+        padding: 3rem;
+        border-radius: 10px;
+    }
+    .hero-overlay h1 { font-size: 3rem; font-weight: bold; }
+    .hero-overlay p { font-size: 1.2rem; margin-top: 1rem; }
+
+    .section-title { font-size: 2.2rem; font-weight: bold; color: #34495e; margin-bottom: 1.5rem; }
+
+    .card { border: none; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+    .card:hover { transform: scale(1.05); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-body { padding: 1.2rem; }
+    .card-title { font-size: 1.3rem; font-weight: bold; color: #333; }
+    .card-text { font-size: 1rem; color: #555; }
+
+    .footer { background-color: #2c3e50; padding: 2rem 0; text-align: center; color: white; }
+    .footer a { color: #f1c40f; text-decoration: none; margin: 0 1rem; font-size: 1.1rem; }
+    .footer a:hover { text-decoration: underline; }
+
+    html { scroll-behavior: smooth; }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">DesiDwaar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
+            <li class="nav-item"><a class="nav-link" href="#travel-info">Travel Info</a></li>
+            <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <video autoplay muted loop>
+        <source src="https://videos.pexels.com/video-files/3129671/3129671-uhd_2560_1440_24fps.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay">
+        <h1>Thiruvananthapuram – Kerala’s Capital City</h1>
+        <p>Home to the grand Padmanabhaswamy Temple, historic museums, and golden beaches.</p>
+    </div>
+</section>
+
+<!-- Introduction -->
+<section class="container py-5">
+    <h2 class="section-title">Introduction</h2>
+    <p>Thiruvananthapuram, also known as Trivandrum, is the capital city of Kerala. Blending traditional heritage with modern charm, it is famous for the Sree Padmanabhaswamy Temple, colonial architecture, and serene beaches like Kovalam. With its museums, palaces, and rich cultural festivals, the city is both a spiritual and cultural hub.</p>
+</section>
+
+<!-- Attractions -->
+<section id="attractions" class="container py-5">
+    <h2 class="section-title">Top Attractions</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://www.ekeralatourism.net/wp-content/uploads/2018/04/Padmanabhaswamy-Temple.jpg" alt="Padmanabhaswamy Temple"><div class="card-body"><h5 class="card-title">Padmanabhaswamy Temple</h5><p class="card-text">A magnificent temple dedicated to Lord Vishnu, known for its grandeur and wealth.</p></div></div></div>
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://www.trawell.in/admin/images/upload/247943659Napier_Museum_Main.jpg" alt="Napier Museum"><div class="card-body"><h5 class="card-title">Napier Museum</h5><p class="card-text">An iconic museum showcasing Kerala’s rich cultural heritage, art, and artifacts.</p></div></div></div>
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/07/5a/50/kuthiramalika-palace-museum.jpg" alt="Kuthiramalika Palace"><div class="card-body"><h5 class="card-title">Kuthiramalika Palace</h5><p class="card-text">A traditional Kerala palace with wooden carvings, built by Maharaja Swathi Thirunal.</p></div></div></div>
+    </div>
+</section>
+
+<!-- Experiences -->
+<section id="experiences" class="container py-5">
+    <h2 class="section-title">Local Experiences</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/3f/f1/bb/kovalam-beach.jpg?w=600&h=400&s=1" alt="Kovalam Beach"><div class="card-body"><h5 class="card-title">Kovalam Beach</h5><p class="card-text">Relax on one of Kerala’s most famous beaches, known for its lighthouse and golden sands.</p></div></div></div>
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://www.fabhotels.com/blog/wp-content/uploads/2018/07/Kerala-Cuisine.jpg" alt="Kerala Cuisine"><div class="card-body"><h5 class="card-title">Kerala Cuisine</h5><p class="card-text">Taste authentic Kerala dishes like Sadya, fish curry, and banana chips.</p></div></div></div>
+        <div class="col-md-4 mb-4"><div class="card"><img src="https://www.keralatourism.org/images/festivals/large/onam20210716110815_1409_1.jpg" alt="Onam Festival"><div class="card-body"><h5 class="card-title">Onam Festival</h5><p class="card-text">Experience Kerala’s grand harvest festival with cultural programs and floral carpets.</p></div></div></div>
+    </div>
+</section>
+
+<!-- Travel Info -->
+<section id="travel-info" class="container py-5">
+<h2 class="section-title">Travel Information</h2>
+<p><strong>Best Time to Visit:</strong> October to March for pleasant weather.</p>
+<p><strong>How to Reach:</strong> By Air - Trivandrum International Airport; By Train - Thiruvananthapuram Central Railway Station; By Road - Well-connected to other cities.</p>
+<p><strong>Local Transport:</strong> Buses, taxis, and auto-rickshaws are widely available.</p>
+</section>
+
+<!-- Map -->
+<section id="map" class="container py-5">
+<h2 class="section-title">Map</h2>
+<div class="embed-responsive embed-responsive-16by9" style="height:400px;">
+<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.8198956245014!2d76.93663747470428!3d8.524139191508374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bbf54b9fb0e1%3A0xe85ed3d2cf83e1a1!2sThiruvananthapuram%2C%20Kerala!5e0!3m2!1sen!2sin!4v1700000000000" allowfullscreen="" loading="lazy"></iframe>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+<p>&copy; 2025 DesiDwaar | <a href="index.html">Home</a> | <a href="#">Contact</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Karnataka – Land of Ancient Temples and Modern Cities. Discover Bengaluru, Mysuru, Hampi, Coorg, Gokarna, Udupi, Mangalore, and Badami.">
+  <title>Karnataka – Land of Heritage & Technology</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body { font-family: 'Arial', sans-serif; background-color: #ffffff; color: #333; }
+    .navbar { background: linear-gradient(to right, #81d4fa, #ffe082); }
+    .navbar-brand { font-size: 1.8rem; font-weight: bold; color: #0d47a1; }
+    .navbar-nav .nav-link { color: #333; font-size: 1.1rem; }
+    .navbar-nav .nav-link:hover { color: #0d47a1; }
+    .btn-warning { font-weight: bold; }
+
+    /* Hero Section */
+    .hero {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+    .hero video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        filter: brightness(65%);
+    }
+    .hero-overlay {
+        background-color: rgba(13, 71, 161, 0.6); /* blue overlay */
+        padding: 3rem;
+        border-radius: 10px;
+        max-width: 700px;
+    }
+    .hero-overlay h1 { font-size: 3rem; font-weight: bold; }
+    .hero-overlay p { font-size: 1.2rem; margin-top: 1rem; }
+
+    .section-title { font-size: 2.5rem; font-weight: bold; color: #0d47a1; margin-bottom: 1.5rem; }
+
+    .card { border: none; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+    .card:hover { transform: scale(1.05); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-body { padding: 1.2rem; }
+    .card-title { font-size: 1.3rem; font-weight: bold; color: #333; }
+    .card-text { font-size: 1rem; color: #666; }
+
+    .footer { background-color: #81d4fa; padding: 2rem 0; text-align: center; }
+    .footer a { color: #0d47a1; text-decoration: none; margin: 0 1rem; font-size: 1.1rem; }
+    .footer a:hover { text-decoration: underline; }
+
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="index.html">DesiDwaar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#culture">Culture & Food</a></li>
+          <li class="nav-item"><a class="nav-link" href="#travel-info">Travel Info</a></li>
+          <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
+          <li class="nav-item"><a class="btn btn-warning" href="#plan-trip">Plan Your Trip</a></li>
+      </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <video autoplay muted loop>
+    <source src="videos/karnataka.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay">
+    <h1>Karnataka – Heritage, Hills & Technology</h1>
+    <p>From modern Bengaluru to ancient Hampi, Karnataka is a land of contrasts – technology, temples, beaches, and coffee plantations.</p>
+  </div>
+</section>
+
+<!-- Introduction -->
+<section class="container py-5">
+  <h2 class="section-title">Introduction</h2>
+  <p>Karnataka, located in southern India, is a state where heritage meets modernity. The IT hub Bengaluru, the royal palaces of Mysuru, the ruins of Hampi, and the scenic beauty of Coorg make it a diverse travel destination. From beaches in Gokarna to ancient temples in Badami, Karnataka offers something for every traveler.</p>
+</section>
+
+<!-- Attractions -->
+<section id="attractions" class="container py-5">
+  <h2 class="section-title">Top Attractions</h2>
+  <div class="row">
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Vidhana_Soudha_Bangalore.jpg" alt="Bengaluru"><div class="card-body"><h5 class="card-title">Bengaluru</h5><p class="card-text">India's Silicon Valley, known for gardens, nightlife, and technology hubs.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Mysore_Palace_Front_View.jpg" alt="Mysuru"><div class="card-body"><h5 class="card-title">Mysuru</h5><p class="card-text">The City of Palaces, famous for Mysore Palace and Dasara festival.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Hampi_Ugra_Narasimha.jpg" alt="Hampi"><div class="card-body"><h5 class="card-title">Hampi</h5><p class="card-text">UNESCO World Heritage Site with ancient ruins of the Vijayanagara Empire.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Coorg_coffee_plantation.jpg" alt="Coorg"><div class="card-body"><h5 class="card-title">Coorg</h5><p class="card-text">A hill station famous for coffee plantations, trekking, and waterfalls.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Om_Beach_Gokarna.jpg" alt="Gokarna"><div class="card-body"><h5 class="card-title">Gokarna</h5><p class="card-text">Known for its pristine beaches and spiritual temples.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Krishna_Mutt_Udupi.jpg" alt="Udupi"><div class="card-body"><h5 class="card-title">Udupi</h5><p class="card-text">Famous for Udupi Krishna Temple and its unique cuisine.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Mangalore_beach.jpg" alt="Mangalore"><div class="card-body"><h5 class="card-title">Mangalore</h5><p class="card-text">A coastal city with temples, beaches, and spicy Mangalorean cuisine.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Badami_Cave_Temples.jpg" alt="Badami"><div class="card-body"><h5 class="card-title">Badami</h5><p class="card-text">Famous for rock-cut cave temples and ancient architecture.</p></div></div></div>
+  </div>
+</section>
+
+<!-- Culture & Food -->
+<section id="culture" class="container py-5">
+  <h2 class="section-title">Culture & Food</h2>
+  <div class="row">
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Mysore_Dasara.jpg" alt="Mysore Dasara"><div class="card-body"><h5 class="card-title">Mysore Dasara</h5><p class="card-text">A grand festival showcasing Karnataka’s royal heritage and traditions.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Masala_dosa.JPG" alt="Masala Dosa"><div class="card-body"><h5 class="card-title">Masala Dosa</h5><p class="card-text">A world-famous South Indian dish that originated in Karnataka.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Yakshagana_Art.jpg" alt="Yakshagana"><div class="card-body"><h5 class="card-title">Yakshagana</h5><p class="card-text">A traditional theater art form with colorful costumes and storytelling.</p></div></div></div>
+  </div>
+</section>
+
+<!-- Travel Info -->
+<section id="travel-info" class="container py-5">
+  <h2 class="section-title">Travel Information</h2>
+  <p><strong>Best Time to Visit:</strong> October to March for pleasant weather.</p>
+  <p><strong>How to Reach:</strong> By Air – Kempegowda International Airport (Bengaluru); By Train – Bengaluru, Mysuru, Mangalore; By Road – Excellent connectivity across South India.</p>
+  <p><strong>Local Transport:</strong> Metro (Bengaluru), buses, cabs, and auto-rickshaws are widely available.</p>
+</section>
+
+<!-- Map -->
+<section id="map" class="container py-5">
+  <h2 class="section-title">Map</h2>
+  <div class="embed-responsive embed-responsive-16by9" style="height:400px;">
+    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1992919.134975227!2d74.0535400125!3d15.317277684397302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbf7bf5f4694b3f%3A0x2daeb35c0f1e0d88!2sKarnataka!5e0!3m2!1sen!2sin!4v1702561583745!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2025 DesiDwaar | <a href="#">Contact</a> | <a href="#">Other Destinations</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

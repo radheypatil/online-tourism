@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="3 Days in Amritsar: Explore the Golden Temple, Wagah Border, and local food. Complete travel guide and itinerary.">
+  <title>3 Days in Amritsar | Travel Guide</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & Fonts */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Roboto', sans-serif; line-height: 1.6; color: #333; }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      background: url('https://s7ap1.scene7.com/is/image/incredibleindia/2-golden-temple-amritsar-punjab-attr-hero?qlt=82&ts=1726662052606') center center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      top:0; left:0; right:0; bottom:0;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      animation: fadeIn 2s ease-in-out;
+      max-width: 90%;
+    }
+    .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+    .hero p { font-size: 1.2rem; margin-bottom: 30px; }
+    .hero a {
+      padding: 12px 30px;
+      background: #FFD700;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .hero a:hover { background: #e6c200; }
+
+    /* Sections */
+    section { padding: 80px 20px; max-width: 1200px; margin: auto; }
+    h2.section-title { font-size: 2.5rem; margin-bottom: 40px; text-align: center; }
+
+    /* Overview */
+    .overview { text-align: center; max-width: 900px; margin: auto; animation: fadeIn 1.5s ease-in-out; }
+    .overview p { margin-top: 20px; font-size: 1.1rem; color: #555; }
+
+    /* Itinerary */
+    .itinerary { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .day-card {
+      flex: 1 1 300px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s, opacity 1s ease-in-out;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    .day-card img { width: 100%; border-radius: 10px; margin-bottom: 15px; }
+    .day-card:hover { transform: translateY(-10px); }
+    .day-card h3 { margin-bottom: 10px; color: #333; }
+    .day-card p { color: #555; }
+
+    /* Travel Tips */
+    .tips { background: #fff7e6; border-left: 5px solid #FFD700; padding: 20px; border-radius: 10px; max-width: 800px; margin: auto; animation: fadeIn 1.5s ease-in-out; }
+    .tips h3 { margin-bottom: 15px; }
+    .tips ul { list-style: disc; padding-left: 20px; color: #555; }
+
+    /* Gallery */
+    .gallery { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; }
+    .gallery img {
+      width: 300px;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s, opacity 0.5s ease-in-out;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .gallery img:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+
+    /* CTA Section */
+    .cta { text-align: center; margin-top: 40px; }
+    .cta a {
+      padding: 15px 35px;
+      background: #FF4500;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .cta a:hover { background: #e03e00; }
+
+    /* Animations */
+    @keyframes fadeIn { from { opacity:0; transform: translateY(30px); } to { opacity:1; transform: translateY(0); } }
+
+    /* Scroll Animations */
+    .fade-in { opacity: 0; transform: translateY(30px); transition: all 1s ease-in-out; }
+    .fade-in.show { opacity: 1; transform: translateY(0); }
+
+    /* Responsive */
+    @media (max-width: 768px) { .hero h1 { font-size: 2rem; } }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>3 Days in Amritsar</h1>
+      <p>Explore the Golden Temple, Wagah Border, and the vibrant local culture.</p>
+      <a href="#itinerary">Plan Your Trip</a>
+    </div>
+  </section>
+
+  <!-- Overview Section -->
+  <section class="overview fade-in">
+    <h2 class="section-title">Discover Amritsar</h2>
+    <p>Amritsar, the spiritual and cultural heart of Punjab, is home to the magnificent Golden Temple, bustling bazaars, and a rich history. Experience a blend of devotion, adventure, and local flavor over three unforgettable days.</p>
+  </section>
+
+  <!-- Itinerary Section -->
+  <section id="itinerary">
+    <h2 class="section-title">3-Day Itinerary</h2>
+    <div class="itinerary">
+      <!-- Day 1 -->
+      <div class="day-card fade-in">
+        <img src="https://s7ap1.scene7.com/is/image/incredibleindia/2-golden-temple-amritsar-punjab-attr-hero?qlt=82&ts=1726662052606" alt="Golden Temple">
+        <h3>Day 1: Golden Temple & Old City</h3>
+        <p>Morning: Visit the Golden Temple at sunrise, explore the serene Sarovar.<br>
+        Afternoon: Explore the Old City, Jallianwala Bagh, and local markets.<br>
+        Evening: Enjoy Langar at the Golden Temple and experience the spiritual ambiance.</p>
+      </div>
+
+      <!-- Day 2 -->
+      <div class="day-card fade-in">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE14cBhS1vks5YqHH6tb7ZkJ5Y6garw_I6rQ&s" alt="Wagah Border Ceremony">
+        <h3>Day 2: Wagah Border & Cultural Immersion</h3>
+        <p>Morning: Relax at your hotel or local cafe.<br>
+        Afternoon: Witness the Wagah Border Beating Retreat Ceremony.<br>
+        Evening: Explore local culture, shops, and enjoy traditional Punjabi cuisine.</p>
+      </div>
+
+      <!-- Day 3 -->
+      <div class="day-card fade-in">
+        <img src="https://www.heritagewalktouramritsar.com/images/food-walk-1.jpg" alt="Local Food">
+        <h3>Day 3: Local Markets & Street Food</h3>
+        <p>Morning: Visit Hall Bazaar and Katra Jaimal Singh Market.<br>
+        Afternoon: Indulge in Amritsari kulchas, lassi, and street snacks.<br>
+        Evening: Take a heritage walk and capture memorable photos before departure.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Travel Tips -->
+  <section class="tips fade-in">
+    <h3>Travel Tips & Local Food</h3>
+    <ul>
+      <li>Best time to visit: October to March.</li>
+      <li>Respect local customs at religious sites.</li>
+      <li>Try Amritsari kulcha, chole bhature, and sweet lassi.</li>
+      <li>Wear comfortable shoes for walking in the Old City.</li>
+      <li>Carry sunscreen and stay hydrated.</li>
+    </ul>
+  </section>
+
+  <!-- Gallery -->
+  <section>
+    <h2 class="section-title">Gallery</h2>
+    <div class="gallery">
+      <img src="https://s7ap1.scene7.com/is/image/incredibleindia/2-golden-temple-amritsar-punjab-attr-hero?qlt=82&ts=1726662052606" alt="Golden Temple">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE14cBhS1vks5YqHH6tb7ZkJ5Y6garw_I6rQ&s" alt="Wagah Border">
+      <img src="https://www.heritagewalktouramritsar.com/images/food-walk-1.jpg" alt="Local Street Food">
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta fade-in">
+    <a href="#">Book Your Trip Now</a>
+  </section>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
+    const appearOnScroll = new IntersectionObserver(function(entries, observer){
+      entries.forEach(entry => {
+        if(!entry.isIntersecting) return;
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => { appearOnScroll.observe(fader); });
+  </script>
+
+</body>
+</html>

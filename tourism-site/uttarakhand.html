@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Uttarakhand – Land of Gods. From Rishikesh and Haridwar to Nainital, Jim Corbett, Auli, and Valley of Flowers.">
+  <title>Uttarakhand – Land of Gods</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body { font-family: 'Arial', sans-serif; background-color: #ffffff; color: #333; }
+    .navbar { background: linear-gradient(to right, #56ab2f, #a8e063); }
+    .navbar-brand { font-size: 1.8rem; font-weight: bold; color: #fff; }
+    .navbar-nav .nav-link { color: #fff; font-size: 1.1rem; }
+    .navbar-nav .nav-link:hover { color: #333; }
+    .btn-warning { font-weight: bold; }
+
+    /* Hero Section */
+    .hero {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+    .hero video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        filter: brightness(70%);
+        z-index: -1;
+    }
+    .hero-overlay {
+        background-color: rgba(0, 100, 0, 0.6); /* greenish overlay */
+        padding: 3rem;
+        border-radius: 10px;
+        max-width: 750px;
+    }
+    .hero-overlay h1 { font-size: 3rem; font-weight: bold; }
+    .hero-overlay p { font-size: 1.2rem; margin-top: 1rem; }
+
+    .section-title { font-size: 2.5rem; font-weight: bold; color: #2e8b57; margin-bottom: 1.5rem; }
+
+    .card { border: none; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+    .card:hover { transform: scale(1.05); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-body { padding: 1.2rem; }
+    .card-title { font-size: 1.3rem; font-weight: bold; color: #333; }
+    .card-text { font-size: 1rem; color: #666; }
+
+    .footer { background-color: #a8e063; padding: 2rem 0; text-align: center; }
+    .footer a { color: #2e8b57; text-decoration: none; margin: 0 1rem; font-size: 1.1rem; }
+    .footer a:hover { text-decoration: underline; }
+
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#">DesiDwaar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
+      <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
+      <li class="nav-item"><a class="nav-link" href="#travel-info">Travel Info</a></li>
+      <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
+      <li class="nav-item"><a class="btn btn-warning" href="#plan-trip">Plan Your Trip</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <video autoplay muted loop>
+    <source src="https://videos.pexels.com/video-files/19184628/19184628-uhd_2560_1440_25fps.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay">
+    <h1>Uttarakhand – Devbhoomi, Land of Gods</h1>
+    <p>Experience the serene Himalayas, sacred rivers, thrilling treks, and divine spirituality.</p>
+  </div>
+</section>
+
+<!-- Introduction -->
+<section class="container py-5">
+  <h2 class="section-title">Introduction</h2>
+  <p>Uttarakhand, fondly called Devbhoomi, is a land of temples, mountains, valleys, and rivers. With sacred cities like Haridwar and Rishikesh, charming hill stations like Mussoorie and Nainital, wildlife at Jim Corbett, and the breathtaking Valley of Flowers, Uttarakhand offers spirituality, adventure, and natural beauty in abundance.</p>
+</section>
+
+<!-- Attractions -->
+<section id="attractions" class="container py-5">
+  <h2 class="section-title">Top Attractions</h2>
+  <div class="row">
+    <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Clock_tower%2C_Dehradun.jpg" alt="Dehradun"><div class="card-body"><h5 class="card-title">Dehradun</h5><p class="card-text">Capital city surrounded by Doon Valley, known for its scenic views, educational institutions, and nearby hill stations.</p></div></div></div>
+    <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Har_ki_Pauri%2C_Haridwar.jpg" alt="Haridwar"><div class="card-body"><h5 class="card-title">Haridwar</h5><p class="card-text">A sacred city on the banks of Ganga, famous for Ganga Aarti at Har Ki Pauri and Kumbh Mela.</p></div></div></div>
+    <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Ram_Jhula%2C_Rishikesh.jpg" alt="Rishikesh"><div class="card-body"><h5 class="card-title">Rishikesh</h5><p class="card-text">Yoga capital of the world, popular for meditation, rafting, and iconic suspension bridges.</p></div></div></div>
+    <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Mussoorie_hills.jpg" alt="Mussoorie"><div class="card-body"><h5 class="card-title">Mussoorie</h5><p class="card-text">The ‘Queen of Hills’, famous for its colonial charm, waterfalls, and Himalayan views.</p></div></div></div>
+    <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Naini_Lake%2C_Nainital.jpg" alt="Nainital"><div class="card-body"><h5 class="card-title">Nainital</h5><p class="card-text">A lake district surrounded by lush hills, offering boating, trekking, and scenic beauty.</p></div></div></div>
+    <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Jim_Corbett_National_Park_Tiger.jpg" alt="Jim Corbett"><div class="card-body"><h5 class="card-title">Jim Corbett (Ramnagar)</h5><p class="card-text">India’s first national park, home to the Royal Bengal Tiger and diverse wildlife.</p></div></div></div>
+    <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Auli_skiing.jpg" alt="Auli"><div class="card-body"><h5 class="card-title">Auli</h5><p class="card-text">A top skiing destination in India, with snow-covered peaks and adventure sports.</p></div></div></div>
+    <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Valley_of_Flowers%2C_Uttarakhand%2C_India.jpg" alt="Valley of Flowers"><div class="card-body"><h5 class="card-title">Valley of Flowers</h5><p class="card-text">A UNESCO World Heritage site, known for its seasonal blooms and Himalayan landscapes.</p></div></div></div>
+  </div>
+</section>
+
+<!-- Experiences -->
+<section id="experiences" class="container py-5">
+  <h2 class="section-title">Local Experiences</h2>
+  <div class="row">
+    <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Ganga_Aarti_at_Haridwar.jpg" alt="Ganga Aarti"><div class="card-body"><h5 class="card-title">Ganga Aarti</h5><p class="card-text">A divine experience at Haridwar and Rishikesh, with chants, lamps, and devotion on the Ganga ghats.</p></div></div></div>
+    <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Uttarakhand_Food.jpg" alt="Kumaoni Cuisine"><div class="card-body"><h5 class="card-title">Kumaoni & Garhwali Cuisine</h5><p class="card-text">Relish local dishes like Aloo Ke Gutke, Bhatt ki Churdkani, and Mandua roti.</p></div></div></div>
+    <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/1/17/White_water_rafting_in_Rishikesh.jpg" alt="Rafting"><div class="card-body"><h5 class="card-title">Adventure Sports</h5><p class="card-text">Enjoy river rafting, trekking, skiing, and camping amidst the Himalayan landscapes.</p></div></div></div>
+  </div>
+</section>
+
+<!-- Travel Info -->
+<section id="travel-info" class="container py-5">
+  <h2 class="section-title">Travel Information</h2>
+  <p><strong>Best Time to Visit:</strong> March to June (summer) and September to November (autumn). Auli for winters (skiing).</p>
+  <p><strong>How to Reach:</strong> By Air – Jolly Grant Airport (Dehradun); By Train – Dehradun, Haridwar, Kathgodam; By Road – well connected by highways and buses.</p>
+  <p><strong>Local Transport:</strong> Taxis, buses, and shared jeeps are common for hilly routes.</p>
+</section>
+
+<!-- Map -->
+<section id="map" class="container py-5">
+  <h2 class="section-title">Map</h2>
+  <div class="embed-responsive embed-responsive-16by9" style="height:400px;">
+    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611535.293!2d77.5!3d30.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908d2e4b63e33df%3A0x60e7f92e10c7e0d1!2sUttarakhand!5e0!3m2!1sen!2sin!4v1702561583745!5m2!1sen!2sin" allowfullscreen></iframe>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2025 DesiDwaar | <a href="#">Contact</a> | <a href="#">Other Destinations</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

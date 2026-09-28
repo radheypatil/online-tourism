@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Jaisalmer – The Golden City of Rajasthan, famous for Jaisalmer Fort, desert safaris, and vibrant culture.">
+  <title>Jaisalmer – The Golden City</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body { font-family: 'Arial', sans-serif; background-color: #ffffff; color: #333; }
+    .navbar { background: linear-gradient(to right, #c7902b, #ffde7d); }
+    .navbar-brand { font-size: 1.8rem; font-weight: bold; color: #fff; }
+    .navbar-nav .nav-link { color: #fff; font-size: 1.1rem; }
+    .navbar-nav .nav-link:hover { color: #333; }
+
+    /* Hero Section */
+    .hero {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+    .hero video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        filter: brightness(65%);
+    }
+    .hero-overlay {
+        background-color: rgba(199, 144, 43, 0.6);
+        padding: 3rem;
+        border-radius: 10px;
+    }
+    .hero-overlay h1 { font-size: 3rem; font-weight: bold; }
+    .hero-overlay p { font-size: 1.2rem; margin-top: 1rem; }
+
+    .section-title { font-size: 2.2rem; font-weight: bold; color: #c7902b; margin-bottom: 1.5rem; }
+
+    .card { border: none; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+    .card:hover { transform: scale(1.05); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-body { padding: 1.2rem; }
+    .card-title { font-size: 1.3rem; font-weight: bold; color: #333; }
+    .card-text { font-size: 1rem; color: #555; }
+
+    .footer { background-color: #c7902b; padding: 2rem 0; text-align: center; color: white; }
+    .footer a { color: #ffde7d; text-decoration: none; margin: 0 1rem; font-size: 1.1rem; }
+    .footer a:hover { text-decoration: underline; }
+
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="index.html">DesiDwaar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#travel-info">Travel Info</a></li>
+          <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
+      </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <video autoplay muted loop>
+      <source src="https://videos.pexels.com/video-files/856190/856190-hd_1920_1080_30fps.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay">
+      <h1>Jaisalmer – The Golden City</h1>
+      <p>Experience the golden charm of forts, havelis, and desert camel safaris.</p>
+  </div>
+</section>
+
+<!-- Introduction -->
+<section class="container py-5">
+  <h2 class="section-title">Introduction</h2>
+  <p>Jaisalmer, often called the "Golden City," stands majestically in the heart of the Thar Desert. Known for its yellow sandstone architecture, magnificent Jaisalmer Fort, and intricate havelis, the city is also the gateway to desert safaris and cultural performances. Its vibrant markets and starry desert nights make it a truly unforgettable destination.</p>
+</section>
+
+<!-- Attractions -->
+<section id="attractions" class="container py-5">
+  <h2 class="section-title">Top Attractions</h2>
+  <div class="row">
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://www.holidify.com/images/cmsuploads/compressed/JaisalmerFort_20180307160138.jpg" alt="Jaisalmer Fort"><div class="card-body"><h5 class="card-title">Jaisalmer Fort</h5><p class="card-text">A UNESCO World Heritage Site, this golden fort is a living fort with homes, shops, and temples inside.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://www.holidify.com/images/cmsuploads/compressed/PatwonKiHaveli_20180307160235.jpg" alt="Patwon Ki Haveli"><div class="card-body"><h5 class="card-title">Patwon Ki Haveli</h5><p class="card-text">An intricately carved haveli that reflects the grandeur of Jaisalmer's past.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://www.holidify.com/images/cmsuploads/compressed/SamSandDunes_20180307160313.jpg" alt="Sam Sand Dunes"><div class="card-body"><h5 class="card-title">Sam Sand Dunes</h5><p class="card-text">A must-visit for camel safaris, desert camping, and folk performances under the stars.</p></div></div></div>
+  </div>
+</section>
+
+<!-- Experiences -->
+<section id="experiences" class="container py-5">
+  <h2 class="section-title">Local Experiences</h2>
+  <div class="row">
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://www.holidify.com/images/cmsuploads/compressed/DesertFestival_20180307160429.jpg" alt="Desert Festival"><div class="card-body"><h5 class="card-title">Desert Festival</h5><p class="card-text">Held in February, this festival showcases camel races, folk music, and cultural performances.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://www.holidify.com/images/cmsuploads/compressed/JaisalmerMarket_20180307160516.jpg" alt="Local Markets"><div class="card-body"><h5 class="card-title">Local Markets</h5><p class="card-text">Shop for handicrafts, embroidery, leather goods, and vibrant textiles.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://www.holidify.com/images/cmsuploads/compressed/JaisalmerCuisine_20180307160612.jpg" alt="Local Cuisine"><div class="card-body"><h5 class="card-title">Local Cuisine</h5><p class="card-text">Taste authentic Rajasthani food like Ker Sangri, Dal Baati Churma, and Ghotua Ladoo.</p></div></div></div>
+  </div>
+</section>
+
+<!-- Travel Info -->
+<section id="travel-info" class="container py-5">
+  <h2 class="section-title">Travel Information</h2>
+  <p><strong>Best Time to Visit:</strong> October to March for pleasant desert weather and festivals.</p>
+  <p><strong>How to Reach:</strong> By Air - Jaisalmer Airport; By Train - Jaisalmer Railway Station; By Road - Connected by NH11.</p>
+  <p><strong>Local Transport:</strong> Auto-rickshaws, jeeps, and camel rides.</p>
+</section>
+
+<!-- Map -->
+<section id="map" class="container py-5">
+  <h2 class="section-title">Map</h2>
+  <div class="embed-responsive embed-responsive-16by9" style="height:400px;">
+      <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.143162328641!2d70.90876207520249!3d26.912433683117698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3947bc185b215c4b%3A0x8c567fcbaffc9c64!2sJaisalmer%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1700000000001" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2025 DesiDwaar | <a href="index.html">Home</a> | <a href="#">Contact</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

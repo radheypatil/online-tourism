@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Maharashtra – Land of Heritage and Modernity. Discover Mumbai, Pune, Aurangabad, Nashik, Mahabaleshwar, Lonavala, Kolhapur, and Alibaug.">
+  <title>Maharashtra – Land of Heritage and Modernity</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body { font-family: 'Arial', sans-serif; background-color: #ffffff; color: #333; }
+    .navbar { background: linear-gradient(to right, #ffb74d, #ffe082); }
+    .navbar-brand { font-size: 1.8rem; font-weight: bold; color: #e65100; }
+    .navbar-nav .nav-link { color: #333; font-size: 1.1rem; }
+    .navbar-nav .nav-link:hover { color: #e65100; }
+    .btn-warning { font-weight: bold; }
+
+    /* Hero Section */
+    .hero {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+    .hero video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        filter: brightness(65%);
+    }
+    .hero-overlay {
+        background-color: rgba(230, 81, 0, 0.6); /* warm orange */
+        padding: 3rem;
+        border-radius: 10px;
+        max-width: 700px;
+    }
+    .hero-overlay h1 { font-size: 3rem; font-weight: bold; }
+    .hero-overlay p { font-size: 1.2rem; margin-top: 1rem; }
+
+    .section-title { font-size: 2.5rem; font-weight: bold; color: #e65100; margin-bottom: 1.5rem; }
+
+    .card { border: none; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+    .card:hover { transform: scale(1.05); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-body { padding: 1.2rem; }
+    .card-title { font-size: 1.3rem; font-weight: bold; color: #333; }
+    .card-text { font-size: 1rem; color: #666; }
+
+    .footer { background-color: #ffb74d; padding: 2rem 0; text-align: center; }
+    .footer a { color: #e65100; text-decoration: none; margin: 0 1rem; font-size: 1.1rem; }
+    .footer a:hover { text-decoration: underline; }
+
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="index.html">DesiDwaar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#culture">Culture & Food</a></li>
+          <li class="nav-item"><a class="nav-link" href="#travel-info">Travel Info</a></li>
+          <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
+          <li class="nav-item"><a class="btn btn-warning" href="#plan-trip">Plan Your Trip</a></li>
+      </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <video autoplay muted loop>
+    <source src="https://videos.pexels.com/video-files/4460228/4460228-hd_1920_1080_25fps.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay">
+    <h1>Maharashtra – Land of Heritage and Modernity</h1>
+    <p>From the bustling streets of Mumbai to the ancient caves of Ajanta and Ellora, Maharashtra blends tradition and progress beautifully.</p>
+  </div>
+</section>
+
+<!-- Introduction -->
+<section class="container py-5">
+  <h2 class="section-title">Introduction</h2>
+  <p>Maharashtra, located in western India, is a land of contrasts. It houses India’s financial hub Mumbai, the cultural capital Pune, ancient caves of Ajanta and Ellora, the vineyards of Nashik, scenic Western Ghats, and Konkan beaches. It offers travelers a mix of heritage, spirituality, nature, and modern vibrance.</p>
+</section>
+
+<!-- Attractions -->
+<section id="attractions" class="container py-5">
+  <h2 class="section-title">Top Attractions</h2>
+  <div class="row">
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Gateway_of_India_in_Mumbai_03-2016_img3.jpg" alt="Mumbai"><div class="card-body"><h5 class="card-title">Mumbai</h5><p class="card-text">The financial capital of India, famous for the Gateway of India, Marine Drive, Bollywood, and nightlife.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Shaniwar_Wada_in_Pune_2015_img3.jpg" alt="Pune"><div class="card-body"><h5 class="card-title">Pune</h5><p class="card-text">Known as the "Oxford of the East," with Shaniwar Wada, Aga Khan Palace, and vibrant culture.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Kailasanatha_temple%2C_Ellora_Caves%2C_India.jpg" alt="Aurangabad"><div class="card-body"><h5 class="card-title">Aurangabad (Sambhajinagar)</h5><p class="card-text">Home to UNESCO Ajanta & Ellora caves, Bibi ka Maqbara, and Daulatabad Fort.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Kumbh_Mela_2015_Nashik.jpg" alt="Nashik"><div class="card-body"><h5 class="card-title">Nashik</h5><p class="card-text">A spiritual city with temples, vineyards, and the Kumbh Mela.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Mahabaleshwar_town.jpg" alt="Mahabaleshwar"><div class="card-body"><h5 class="card-title">Mahabaleshwar</h5><p class="card-text">A hill station in the Western Ghats, famous for strawberries and scenic viewpoints.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Lonavla_valley.jpg" alt="Lonavala"><div class="card-body"><h5 class="card-title">Lonavala</h5><p class="card-text">A monsoon paradise, known for green hills, waterfalls, and chikki.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Mahalakshmi_temple_in_Kolhapur.jpg" alt="Kolhapur"><div class="card-body"><h5 class="card-title">Kolhapur</h5><p class="card-text">Famous for Mahalakshmi temple, Kolhapuri chappals, and spicy cuisine.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Alibag_beach_Maharashtra_India.jpg" alt="Alibaug"><div class="card-body"><h5 class="card-title">Alibaug</h5><p class="card-text">A popular coastal town with beautiful beaches and forts along the Konkan coast.</p></div></div></div>
+  </div>
+</section>
+
+<!-- Culture & Food -->
+<section id="culture" class="container py-5">
+  <h2 class="section-title">Culture & Food</h2>
+  <div class="row">
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Lavani_dance_performance.jpg" alt="Lavani Dance"><div class="card-body"><h5 class="card-title">Lavani Dance</h5><p class="card-text">Traditional dance form known for powerful expressions and rhythm.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Pav_bhaji.jpg" alt="Maharashtrian Food"><div class="card-body"><h5 class="card-title">Maharashtrian Food</h5><p class="card-text">From pav bhaji & vada pav in Mumbai to puran poli & misal pav, the cuisine is diverse and flavorful.</p></div></div></div>
+      <div class="col-md-4 mb-4"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Ganesh_Chaturthi_festival_in_Mumbai.jpg" alt="Ganesh Chaturthi"><div class="card-body"><h5 class="card-title">Ganesh Chaturthi</h5><p class="card-text">The grandest festival of Maharashtra, celebrated with devotion, art, and music.</p></div></div></div>
+  </div>
+</section>
+
+<!-- Travel Info -->
+<section id="travel-info" class="container py-5">
+  <h2 class="section-title">Travel Information</h2>
+  <p><strong>Best Time to Visit:</strong> October to March for pleasant weather; Monsoon for greenery in hill stations.</p>
+  <p><strong>How to Reach:</strong> By Air – Mumbai, Pune, Nagpur, Aurangabad airports; By Train – Excellent rail connectivity across India; By Road – National highways and state transport buses.</p>
+  <p><strong>Local Transport:</strong> Local trains, metros, buses, taxis, and auto-rickshaws.</p>
+</section>
+
+<!-- Map -->
+<section id="map" class="container py-5">
+  <h2 class="section-title">Map</h2>
+  <div class="embed-responsive embed-responsive-16by9" style="height:400px;">
+    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60338.731!2d72.82!3d18.96!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63b0178f34f%3A0x1b8c1e0b0f44b2b3!2sMaharashtra!5e0!3m2!1sen!2sin!4v1702561583745!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2025 DesiDwaar | <a href="#">Contact</a> | <a href="#">Other Destinations</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

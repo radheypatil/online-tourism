@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Palolem Beach – A serene beach in Goa with palm-fringed shores, dolphin trips, and tranquil surroundings.">
+  <title>Palolem – Serene Beach & Dolphin Spotting</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body { font-family: 'Arial', sans-serif; background-color: #ffffff; color: #333; }
+    .navbar { background: linear-gradient(to right, #ff512f, #dd2476); }
+    .navbar-brand { font-size: 1.8rem; font-weight: bold; color: #fff; }
+    .navbar-nav .nav-link { color: #fff; font-size: 1.1rem; }
+    .navbar-nav .nav-link:hover { color: #ffd700; }
+
+    /* Hero Section */
+    .hero {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+    .hero video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        filter: brightness(65%);
+    }
+    .hero-overlay {
+        background-color: rgba(221, 36, 118, 0.6);
+        padding: 3rem;
+        border-radius: 10px;
+    }
+    .hero-overlay h1 { font-size: 3rem; font-weight: bold; }
+    .hero-overlay p { font-size: 1.2rem; margin-top: 1rem; }
+
+    .section-title { font-size: 2.2rem; font-weight: bold; color: #dd2476; margin-bottom: 1.5rem; }
+
+    .card { border: none; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+    .card:hover { transform: scale(1.05); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-body { padding: 1.2rem; }
+    .card-title { font-size: 1.3rem; font-weight: bold; color: #333; }
+    .card-text { font-size: 1rem; color: #555; }
+
+    .footer { background-color: #dd2476; padding: 2rem 0; text-align: center; color: white; }
+    .footer a { color: #ffe4e1; text-decoration: none; margin: 0 1rem; font-size: 1.1rem; }
+    .footer a:hover { text-decoration: underline; }
+
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="index.html">DesiDwaar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#travel-info">Travel Info</a></li>
+          <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
+      </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <video autoplay muted loop>
+      <source src="https://www.pexels.com/video/854152/download/?format=mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay">
+      <h1>Palolem – Serene Beach & Dolphin Spotting</h1>
+      <p>A peaceful beach with palm-fringed shores and dolphin trips for nature lovers.</p>
+  </div>
+</section>
+
+<!-- Introduction -->
+<section class="container py-5">
+  <h2 class="section-title">Introduction</h2>
+  <p>Palolem Beach in South Goa is one of the most tranquil beaches in the region, known for its crescent-shaped shoreline lined with coconut palms. It is ideal for relaxing, swimming, and enjoying the pristine natural beauty. The beach also offers opportunities for dolphin spotting trips and kayaking, making it a perfect escape from the bustling northern beaches.</p>
+</section>
+
+<!-- Attractions -->
+<section id="attractions" class="container py-5">
+  <h2 class="section-title">Top Attractions</h2>
+  <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.goa-tourism.com/wp-content/uploads/2020/06/palolem-beach-2.jpg" alt="Palolem Beach">
+          <div class="card-body">
+            <h5 class="card-title">Palolem Beach</h5>
+            <p class="card-text">A scenic crescent-shaped beach, perfect for swimming, sunbathing, and photography.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.goa-tourism.com/wp-content/uploads/2020/06/dolphin-spotting.jpg" alt="Dolphin Trips">
+          <div class="card-body">
+            <h5 class="card-title">Dolphin Spotting Trips</h5>
+            <p class="card-text">Morning boat trips to spot dolphins along the coastline.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.goa-tourism.com/wp-content/uploads/2020/06/kayaking-palolem.jpg" alt="Kayaking">
+          <div class="card-body">
+            <h5 class="card-title">Kayaking</h5>
+            <p class="card-text">Explore the calm waters and mangrove inlets nearby with kayaking adventures.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- Experiences -->
+<section id="experiences" class="container py-5">
+  <h2 class="section-title">Local Experiences</h2>
+  <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.goa-tourism.com/wp-content/uploads/2020/06/boat-cruise.jpg" alt="Boat Cruises">
+          <div class="card-body">
+            <h5 class="card-title">Boat Cruises</h5>
+            <p class="card-text">Sunset and dolphin cruises along the serene waters of Palolem Beach.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.goa-tourism.com/wp-content/uploads/2020/06/yoga-beach.jpg" alt="Yoga & Meditation">
+          <div class="card-body">
+            <h5 class="card-title">Yoga & Meditation</h5>
+            <p class="card-text">Relax and rejuvenate with yoga sessions by the beach during sunrise.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.goa-tourism.com/wp-content/uploads/2020/06/local-markets-palolem.jpg" alt="Local Markets">
+          <div class="card-body">
+            <h5 class="card-title">Local Markets</h5>
+            <p class="card-text">Explore beachside shacks and small markets for souvenirs and handicrafts.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- Travel Info -->
+<section id="travel-info" class="container py-5">
+  <h2 class="section-title">Travel Information</h2>
+  <p><strong>Best Time to Visit:</strong> November to February for pleasant weather and calm seas.</p>
+  <p><strong>How to Reach:</strong> By Air - Dabolim Airport (65 km); By Train - Canacona Station (5 km); By Road - Well-connected via buses, taxis, and rental scooters.</p>
+  <p><strong>Local Transport:</strong> Auto-rickshaws, bicycles, and scooter rentals are popular for exploring Palolem and nearby beaches.</p>
+</section>
+
+<!-- Map -->
+<section id="map" class="container py-5">
+  <h2 class="section-title">Map</h2>
+  <div class="embed-responsive embed-responsive-16by9" style="height:400px;">
+      <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.811769050703!2d74.01948627547088!3d15.010793889120768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbf1f1e98b5f9ab%3A0x7c1d3ad61e62049c!2sPalolem%20Beach!5e0!3m2!1sen!2sin!4v1700004444444" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2025 DesiDwaar | <a href="index.html">Home</a> | <a href="#">Contact</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
